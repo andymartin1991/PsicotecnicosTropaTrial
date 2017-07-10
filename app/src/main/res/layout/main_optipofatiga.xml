@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:gravity="center_vertical|center_horizontal|center"
+    android:orientation="vertical">
+    <!-- android:background="@drawable/background"-->
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="@string/modofatiga"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/menuprincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/listadirectivos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                tools:listitem="@layout/menu_opttest">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
