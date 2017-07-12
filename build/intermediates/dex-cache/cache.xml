@@ -2,40 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\andym\.android\build-cache\b058ce508f3effb2d2d2f12c3b9f9095cdcac216\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7912610ed96381c25c36d986eba422731b9641b6">
-        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa\app\build\intermediates\pre-dexed\debug\classes_1f91b8792ee345b17be018d5dbda713ffbc7f0ee.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\andym\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.1\2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0\gson-2.8.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
-        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa\app\build\intermediates\pre-dexed\debug\gson-2.8.1_54ae386917ffb001755dab0f0629105e80619228.jar" />
-    </item>
-    <item
         is-multidex="true"
-        jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7fe703729a9fa999f954f2c98135a44d70bcad98">
-        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e5544c4cf72a33d09392ae2364bf7811073f2d25\classes.dex" />
+        sha1="ade9f0de4a287c6d6ced383e99f2d0ae62a69c86">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bcd778e0e2dfd125aa5edbd3b69998beaa8068ca\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0ba9022c7fe0ba1f0129632d4bd89d1564cb105d\classes.dex" />
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c82c06a03717288a4e5d8134a0d7180724b86a02\classes.dex" />
     </item>
 
 </items>
