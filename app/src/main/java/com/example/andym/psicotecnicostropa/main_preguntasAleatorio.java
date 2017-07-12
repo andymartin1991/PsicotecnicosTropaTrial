@@ -25,6 +25,10 @@ import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class main_preguntasAleatorio extends Activity {
 
@@ -83,6 +87,24 @@ public class main_preguntasAleatorio extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
+
+        //////////////////////////////////////
+        final InterstitialAd interstitial = new InterstitialAd(this);
+        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8310079734");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitial.loadAd(adRequest);
+        /////////////////////////////////////////////
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
 
         animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
                 -1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
@@ -808,6 +830,7 @@ public class main_preguntasAleatorio extends Activity {
         alante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                interstitial.show();
                 avanza();
             }
         });

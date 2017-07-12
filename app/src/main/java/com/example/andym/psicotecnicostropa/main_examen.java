@@ -28,6 +28,10 @@ import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.dto.Notas;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -95,6 +99,24 @@ public class main_examen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
+
+        //////////////////////////////////////
+        final InterstitialAd interstitial = new InterstitialAd(this);
+        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8310079734");
+        final AdRequest adRequest = new AdRequest.Builder().build();
+        interstitial.loadAd(adRequest);
+        /////////////////////////////////////////////
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
 
         // animaciones
         animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
@@ -590,6 +612,7 @@ public class main_examen extends Activity {
                             @SuppressWarnings("deprecation")
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.loadAd(adRequest);
                                 posi = 0;
                                 bloque++;
                                 if (bloque == 8) {
@@ -621,6 +644,7 @@ public class main_examen extends Activity {
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                interstitial.show();
 
                 if (bloque == 7 && posi == 14) {
                     if (arregloacabar == false) {
@@ -683,6 +707,7 @@ public class main_examen extends Activity {
                                     @SuppressWarnings("deprecation")
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
+                                        interstitial.loadAd(adRequest);
                                         acabar();
                                         Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                         startActivity(resultado);
@@ -737,6 +762,7 @@ public class main_examen extends Activity {
                                                             @SuppressWarnings("deprecation")
                                                             @Override
                                                             public void onClick(DialogInterface dialog, int which) {
+                                                                interstitial.loadAd(adRequest);
                                                                 posi = 0;
                                                                 bloque++;
                                                                 if (bloque == 8) {
@@ -765,6 +791,7 @@ public class main_examen extends Activity {
                                     @SuppressWarnings("deprecation")
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
+                                        interstitial.loadAd(adRequest);
                                         posi = 0;
                                         bloque++;
                                         siguiente.setEnabled(true);
@@ -791,6 +818,7 @@ public class main_examen extends Activity {
                                                                 @SuppressWarnings("deprecation")
                                                                 @Override
                                                                 public void onClick(DialogInterface dialog, int which) {
+                                                                    interstitial.loadAd(adRequest);
                                                                     posi = 0;
                                                                     bloque++;
                                                                     if (bloque == 8) {

@@ -2,13 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\61f4c5e5c681bcf474efe3bcf62a5ddac2575459\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="ade9f0de4a287c6d6ced383e99f2d0ae62a69c86">
-        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bcd778e0e2dfd125aa5edbd3b69998beaa8068ca\classes.dex" />
+        sha1="5493a7c08b74d424d08a23c68334893cfd2d5ee3">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_ec77bf57a0158448a78d322f214ac9e1c2c2a401.jar" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +18,150 @@
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c82c06a03717288a4e5d8134a0d7180724b86a02\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\97dfd2657fc3f118370d2704f9bc54ffb38fad07\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4eb9db2bdb58dfaf40f25c84421db379c99c58eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\97dfd2657fc3f118370d2704f9bc54ffb38fad07\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_4eb9db2bdb58dfaf40f25c84421db379c99c58eb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\d03dec7a8163f6d8c899458601cf4b821a7a89ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="587840a157b50a6380d814a7a5a87b76118405e2">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0bc19ccd541466a0669d8f9eba68fd404b3221c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\182338bc340cc80c4452fad2baad81505530c825\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4737d9835cf3ea9751f7d6647be60900062d1062">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0150ef490adaf973ff5fc511934a1d545be830d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\c0bb265a30a4f490b73a445342b7df72d6dccf7e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_e196a290d62ee00cdfcaa144aeede6508c267817.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\c0bb265a30a4f490b73a445342b7df72d6dccf7e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e196a290d62ee00cdfcaa144aeede6508c267817\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="872a7acea818f4aec1ca008a8d095a444c508a44">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bcd778e0e2dfd125aa5edbd3b69998beaa8068ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\38e0b67b4758d8cf71e03c1435f664a7286a4865\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="acd4f9fad8500386084346a88ca47e2b66e84ffd">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_87e689662a0d415baf9f514d6acbccc9e57ada53\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\de9a94a10bb3986a647f902873a17ae9511d5f37\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f909161e9bac1dd36538a275f06cae462082316a">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_b3470ef863e3594aeb3ba139cb0e1f597394d649.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\38e0b67b4758d8cf71e03c1435f664a7286a4865\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="acd4f9fad8500386084346a88ca47e2b66e84ffd">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_87e689662a0d415baf9f514d6acbccc9e57ada53.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\de9a94a10bb3986a647f902873a17ae9511d5f37\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f909161e9bac1dd36538a275f06cae462082316a">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b3470ef863e3594aeb3ba139cb0e1f597394d649\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\dfaf3025f7afcc1dafa6b6bf0f5ba4a3639fa5c0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_0cb8093057b5d5917f489013a001f3023c360c68.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\dfaf3025f7afcc1dafa6b6bf0f5ba4a3639fa5c0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0cb8093057b5d5917f489013a001f3023c360c68\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\d03dec7a8163f6d8c899458601cf4b821a7a89ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="587840a157b50a6380d814a7a5a87b76118405e2">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_0bc19ccd541466a0669d8f9eba68fd404b3221c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\182338bc340cc80c4452fad2baad81505530c825\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4737d9835cf3ea9751f7d6647be60900062d1062">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_0150ef490adaf973ff5fc511934a1d545be830d5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andym\.android\build-cache\61f4c5e5c681bcf474efe3bcf62a5ddac2575459\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5493a7c08b74d424d08a23c68334893cfd2d5ee3">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec77bf57a0158448a78d322f214ac9e1c2c2a401\classes.dex" />
     </item>
 
 </items>

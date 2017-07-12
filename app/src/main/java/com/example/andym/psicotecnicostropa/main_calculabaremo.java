@@ -1,6 +1,8 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -8,9 +10,15 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -33,6 +41,25 @@ public class main_calculabaremo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_calculabaremo);
 
+        //////////////////////////////////////
+        final InterstitialAd interstitial = new InterstitialAd(this);
+        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8310079734");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitial.loadAd(adRequest);
+        /////////////////////////////////////////////
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
+
         mostrar = (TextView) findViewById(R.id.barcal);
         mostrar.setText(getString(R.string.baremototal) + " " + puntos);
 
@@ -43,6 +70,8 @@ public class main_calculabaremo extends Activity {
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                interstitial.show();
 
                 double misio = 0;
                 double any = 0;

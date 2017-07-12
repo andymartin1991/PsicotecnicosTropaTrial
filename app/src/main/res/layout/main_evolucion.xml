@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytMain"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gris">
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/BLANCO"
-        android:textSize="20dp"
-        android:text="@string/evolucion" />
-
     <LinearLayout
-        android:id="@+id/margi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_margin="10dp"
-        android:background="@color/gris">
+        android:orientation="vertical"
+        android:layout_weight="1.24">
 
-        <ListView
-            android:id="@+id/lista"
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/evolucion"
+            android:textColor="@color/BLANCO"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/margi"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/BLANCO"/>
+            android:layout_margin="10dp"
+            android:background="@color/gris"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/lista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BLANCO" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

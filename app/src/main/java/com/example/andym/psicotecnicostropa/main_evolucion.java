@@ -7,11 +7,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.andym.psicotecnicostropa.dto.Notas;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -329,6 +333,20 @@ public class main_evolucion extends Activity {
             //no hay datos de evolucion
         }
 
-        //titulo.setText(namefichbonito.get(0));
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Iniciar una solicitud genérica.
+        AdRequest adRequest = new AdRequest.Builder().build();
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
     }
+
 }

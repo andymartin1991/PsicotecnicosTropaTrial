@@ -4,9 +4,11 @@ package com.example.andym.psicotecnicostropa;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -27,6 +29,10 @@ import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,7 +43,7 @@ import java.io.OutputStreamWriter;
 public class main_preguntas extends Activity {
 
     int arreglo = 0;
-
+    String url = "";
     boolean pp = false;
     Preguntas[] pre;
     contador cont = new contador();
@@ -89,6 +95,24 @@ public class main_preguntas extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
+        //////////////////////////////////////
+        final InterstitialAd interstitial = new InterstitialAd(this);
+        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8310079734");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitial.loadAd(adRequest);
+        /////////////////////////////////////////////
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
+
         animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
                 -1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
                 Animation.RELATIVE_TO_PARENT, 0.0f,
@@ -136,7 +160,7 @@ public class main_preguntas extends Activity {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guardar(getIntent().getExtras().getString("tipo"));
+                trial();
             }
         });
         switch (getIntent().getExtras().getString("tipo")) {
@@ -319,6 +343,7 @@ public class main_preguntas extends Activity {
         alante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                interstitial.show();
                 avanza();
                 colocar++;
                 recolocar();
@@ -1296,4 +1321,33 @@ public class main_preguntas extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
+    private void trial() {
+        String my_package_name = "com.naroh.tropaPsicotecnicoOficial";
+
+        url = "https://play.google.com/store/apps/details?id="+ my_package_name;
+
+
+        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
+        dialogo1.setIcon(getResources().getDrawable(R.drawable.iexc));
+        dialogo1.setTitle(getString(R.string.atencion));
+        dialogo1.setMessage(getString(R.string.trial));
+        dialogo1.setCancelable(false);
+        dialogo1.setPositiveButton(getString(R.string.comprar),
+
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogo1, int id) {
+                        final Intent intent = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(url));
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                                | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                        startActivity(intent);
+                    }
+                });
+        dialogo1.setNegativeButton(getString(R.string.ahorano),
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogo1, int id) {
+                    }
+                });
+        dialogo1.show();
+    }
 }

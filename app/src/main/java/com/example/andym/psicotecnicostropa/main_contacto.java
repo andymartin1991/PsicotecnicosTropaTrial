@@ -9,9 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 /**
  * Created by xe63008 on 26/04/2017.
@@ -28,7 +34,6 @@ public class main_contacto extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_contacto);
         final String[] items = {getString(R.string.asunto1), getString(R.string.asunto2), getString(R.string.asunto3), getString(R.string.asunto4), getString(R.string.asunto5)};
-
 
         TextView tmensaje;
         TextView tasunto;
@@ -59,6 +64,20 @@ public class main_contacto extends Activity {
 
             }
         });
+
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Iniciar una solicitud genérica.
+        AdRequest adRequest = new AdRequest.Builder().build();
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
 
     }
 

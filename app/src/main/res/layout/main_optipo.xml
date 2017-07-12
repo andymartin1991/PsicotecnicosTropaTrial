@@ -4,35 +4,42 @@
     android:layout_height="match_parent"
     android:background="@color/gris"
     android:gravity="center_vertical|center_horizontal|center"
-    android:orientation="vertical">
-    <!-- android:background="@drawable/background"-->
+    android:orientation="vertical"
+    android:id="@+id/lytMain">
 
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal|center"
-        android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.24">
 
-        <LinearLayout
-            android:id="@+id/menuprincipal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center_vertical|center_horizontal|center"
-            android:gravity="center_vertical|center_horizontal|center"
-            android:orientation="horizontal">
+            android:layout_marginTop="10dp">
 
-            <ListView
-                android:id="@+id/listadirectivos"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <LinearLayout
+                android:id="@+id/menuprincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal|center"
-                tools:listitem="@layout/menu_opttest">
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
 
-            </ListView>
+                <ListView
+                    android:id="@+id/listadirectivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    tools:listitem="@layout/menu_opttest">
 
-        </LinearLayout>
+                </ListView>
 
-    </FrameLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>

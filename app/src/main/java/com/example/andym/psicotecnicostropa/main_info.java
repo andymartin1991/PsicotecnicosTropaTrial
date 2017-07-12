@@ -7,7 +7,13 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -24,6 +30,24 @@ public class main_info extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_info);
 
+        //////////////////////////////////////
+        final InterstitialAd interstitial = new InterstitialAd(this);
+        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8310079734");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitial.loadAd(adRequest);
+        /////////////////////////////////////////////
+
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
 
         TextView num = (TextView) findViewById(R.id.num);
         TextView verb = (TextView) findViewById(R.id.verb);
@@ -604,6 +628,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 a1.setVisibility(View.GONE);
                                 borrar("verbal");
                                 if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
@@ -636,6 +661,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrar("numerico");
                                 b1.setVisibility(View.GONE);
                                 b.setVisibility(View.GONE);
@@ -666,6 +692,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrar("espacial");
                                 c1.setVisibility(View.GONE);
                                 c.setVisibility(View.GONE);
@@ -696,6 +723,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrar("mecanico");
                                 d1.setVisibility(View.GONE);
                                 d.setVisibility(View.GONE);
@@ -726,6 +754,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrar("perceptiva");
                                 e1.setVisibility(View.GONE);
                                 e.setVisibility(View.GONE);
@@ -756,6 +785,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrar("memoria");
                                 f1.setVisibility(View.GONE);
                                 f.setVisibility(View.GONE);
@@ -786,6 +816,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrar("abstrapto");
                                 g1.setVisibility(View.GONE);
                                 g.setVisibility(View.GONE);
@@ -816,6 +847,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrarbar();
                                 h1.setVisibility(View.GONE);
                                 h.setVisibility(View.GONE);
@@ -846,6 +878,7 @@ public class main_info extends Activity {
                         .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                interstitial.show();
                                 borrarevo();
                                 i1.setVisibility(View.GONE);
                                 i.setVisibility(View.GONE);

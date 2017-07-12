@@ -10,6 +10,10 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+
 /**
  * Created by andym on 08/07/2017.
  */
@@ -36,7 +40,19 @@ public class main_fisica extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_fisica);
 
-        //Resources res = getResources();
+        // Crear adView.
+        AdView adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdSize(AdSize.BANNER);
+        // Buscar LinearLayout suponiendo que se le ha asignado
+        // el atributo android:id="@+id/mainLayout".
+        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        // Añadirle adView.
+        layout.addView(adView);
+        // Iniciar una solicitud genérica.
+        AdRequest adRequest = new AdRequest.Builder().build();
+        // Cargar adView con la solicitud de anuncio.
+        adView.loadAd(adRequest);
 
         tab1 = (LinearLayout)findViewById(R.id.tab1);
         tab2 = (LinearLayout)findViewById(R.id.tab2);
