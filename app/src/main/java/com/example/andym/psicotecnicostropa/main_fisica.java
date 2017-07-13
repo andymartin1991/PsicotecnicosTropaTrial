@@ -42,7 +42,7 @@ public class main_fisica extends Activity {
 
         // Crear adView.
         AdView adView = new AdView(this);
-        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdUnitId("ca-app-pub-3897421105469965/7146736136");
         adView.setAdSize(AdSize.BANNER);
         // Buscar LinearLayout suponiendo que se le ha asignado
         // el atributo android:id="@+id/mainLayout".

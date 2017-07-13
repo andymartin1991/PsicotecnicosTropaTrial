@@ -57,13 +57,13 @@ public class main_resultado_exam extends Activity {
 
         //////////////////////////////////////
         final InterstitialAd interstitial = new InterstitialAd(this);
-        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8310079734");
+        interstitial.setAdUnitId("ca-app-pub-3897421105469965/8623469338");
         AdRequest adRequest = new AdRequest.Builder().build();
         interstitial.loadAd(adRequest);
         /////////////////////////////////////////////
         // Crear adView.
         AdView adView = new AdView(this);
-        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdUnitId("ca-app-pub-3897421105469965/7146736136");
         adView.setAdSize(AdSize.BANNER);
         // Buscar LinearLayout suponiendo que se le ha asignado
         // el atributo android:id="@+id/mainLayout".
@@ -459,7 +459,7 @@ public class main_resultado_exam extends Activity {
                         intentCompartir.setType("text/plain");
                         intentCompartir.putExtra(Intent.EXTRA_SUBJECT, "Psicotécnicos Tropa");
                         intentCompartir.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://com.example.andym.psicotecnicostropa/drawable/ic_launcher"));
-                        intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notas.getNotaredondeada() + "\n" + getString(R.string.minotabare) + " " + notas.getNotaredondeadabar() + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
+                        intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notas.getNotaredondeada() + "\n" + getString(R.string.minotabare) + " " + notas.getNotaredondeadabar() + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoTrial");
                         intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));
                     } else {

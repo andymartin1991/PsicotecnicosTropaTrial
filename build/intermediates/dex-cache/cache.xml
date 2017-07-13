@@ -2,15 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\andym\.android\build-cache\61f4c5e5c681bcf474efe3bcf62a5ddac2575459\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5493a7c08b74d424d08a23c68334893cfd2d5ee3">
-        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_ec77bf57a0158448a78d322f214ac9e1c2c2a401.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
@@ -18,6 +9,15 @@
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c82c06a03717288a4e5d8134a0d7180724b86a02\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\andym\.android\build-cache\61f4c5e5c681bcf474efe3bcf62a5ddac2575459\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5493a7c08b74d424d08a23c68334893cfd2d5ee3">
+        <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\pre-dexed\release\classes_ec77bf57a0158448a78d322f214ac9e1c2c2a401.jar" />
     </item>
     <item
         is-multidex="true"
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="872a7acea818f4aec1ca008a8d095a444c508a44">
+        sha1="f274de91ddbab997906e67f22057843c366a9f37">
         <dex dex="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bcd778e0e2dfd125aa5edbd3b69998beaa8068ca\classes.dex" />
     </item>
     <item

@@ -38,7 +38,7 @@ public class main_principal extends Activity {
 
         // Crear adView.
         AdView adView = new AdView(this);
-        adView.setAdUnitId("ca-app-pub-3897421105469965/2570262531");
+        adView.setAdUnitId("ca-app-pub-3897421105469965/7146736136");
         adView.setAdSize(AdSize.BANNER);
         // Buscar LinearLayout suponiendo que se le ha asignado
         // el atributo android:id="@+id/mainLayout".
@@ -678,11 +678,8 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    Toast toast1 =
-                            Toast.makeText(getApplicationContext(),
-                                    "Próximamente", Toast.LENGTH_SHORT);
-                    toast1.show();
                     entra[0] = false;
+                    trial();
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     ayuda.startAnimation(animation);
@@ -739,7 +736,7 @@ public class main_principal extends Activity {
                             Intent intentCompartir = new Intent(Intent.ACTION_SEND);
                             intentCompartir.setType("text/plain");
                             intentCompartir.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
-                            intentCompartir.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
+                            intentCompartir.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoTrial");
                             intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));
                             entra[0] = true;
@@ -764,7 +761,7 @@ public class main_principal extends Activity {
                             } catch (InterruptedException e) {
                             }
                             Intent intent = new Intent(Intent.ACTION_VIEW,
-                                    Uri.parse("https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial"));
+                                    Uri.parse("https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoTrial"));
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);
