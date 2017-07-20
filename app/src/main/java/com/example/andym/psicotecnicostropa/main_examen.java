@@ -45,6 +45,10 @@ import java.util.List;
 
 public class main_examen extends Activity {
 
+    static boolean acabar = false;
+    static boolean guardado = false;
+
+
     Animation animrightatras = null;
     Animation animrightalante = null;
 
@@ -89,7 +93,7 @@ public class main_examen extends Activity {
     long cuentatiempo = tempo * 1000;
     long guardatiempo = 0;
     CountDownTimer th;
-    boolean acabar = false, arregloacabar = false;
+    boolean arregloacabar = false;
     Button siguiente;
 
     static Notas notas;

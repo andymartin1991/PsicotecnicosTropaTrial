@@ -1,6 +1,8 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
@@ -8,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -717,6 +720,9 @@ public class main_resultado_exam extends Activity {
                                         JSONObjectList.add(jsonSub);
                                     }
                                     jsonObject.put("bloqueabstrapto", JSONObjectList);
+
+                                    main_examen.guardado = true;
+
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -766,6 +772,17 @@ public class main_resultado_exam extends Activity {
             }
         });
 
+        if (main_examen.acabar == true) {
+            guardar.setEnabled(true);
+            if (main_examen.guardado == true) {
+                guardar.setEnabled(false);
+            } else {
+                guardar.setEnabled(true);
+            }
+        } else {
+            guardar.setEnabled(false);
+        }
+
     }
 
     public void notabaremo() {
@@ -784,6 +801,31 @@ public class main_resultado_exam extends Activity {
         resultado = Math.round(resultado);
         resultado = (resultado / Math.pow(10, numeroDecimales)) + parteEntera;
         return resultado;
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            new AlertDialog.Builder(this)
+                    .setIcon(getResources().getDrawable(R.drawable.iexc))
+                    .setTitle(getString(R.string.atencion))
+                    .setCancelable(false)
+                    .setMessage(getString(R.string.salirresultado))
+                    .setNegativeButton(getString(R.string.verfallos), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    })
+                    .setPositiveButton(getString(R.string.permanecer), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog,
+                                            int which) {
+
+                        }
+                    }).show();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }

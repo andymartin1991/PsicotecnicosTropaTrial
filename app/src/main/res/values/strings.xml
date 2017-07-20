@@ -231,4 +231,9 @@ aspirante. </string>
     <string name="ahorano">Ahora no</string>
     <string name="comprar">Comprar</string>
 
+    <string name="salirresultado">¿Que deseas hacer? Ver los fallos de tu examen o permanecer aquí </string>
+    <string name="verfallos">Ver fallos</string>
+    <string name="permanecer">Permanecer</string>
+
+
 </resources>

@@ -83,7 +83,7 @@ public class main_contacto extends Activity {
 
     public void onClick(View v) {
         // Reemplazamos el email por algun otro real
-        String[] to = {"psicotecnicostropa@gmail.com"};
+        String[] to = {"psicotecnicostropatrial@gmail.com"};
         String[] cc = {""};
         Emensaje = mensaje.getText().toString();
         if (Emensaje.equals("")) {
