@@ -22,30 +22,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34eb36d5-13e5-40f6-9130-c0b19af3f9f4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_integration_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javawriter_2_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation_api_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305_2_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/pagerslidingtabstrip_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_lite_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_clearcut_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_gass_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/transition_25_3_0.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_calculabaremo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_calculabaremo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_contacto.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_contacto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_evolucion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_evolucion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_examen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_examen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_fisica.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_fisica.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_info.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_optTipo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_optTipo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_optTipoFatiga.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_optTipoFatiga.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasAleatorio.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasAleatorio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasFatiga.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasFatiga.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_principal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_resultado_exam.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_resultado_exam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_calculabaremo.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_calculabaremo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_fisica.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_fisica.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
     </list>
     <ignored path="PsicotecnicosTropa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,7 +119,7 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="10948">
               <caret line="644" column="45" selection-start-line="644" selection-start-column="45" selection-end-line="644" selection-end-column="45" />
               <folding />
             </state>
@@ -105,7 +129,7 @@
       <file leaf-file-name="main_preguntas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="1156">
               <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
               <folding />
             </state>
@@ -158,7 +182,7 @@
       <file leaf-file-name="main_resultado_exam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_resultado_exam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7208">
+            <state relative-caret-position="7123">
               <caret line="461" column="294" selection-start-line="461" selection-start-column="294" selection-end-line="461" selection-end-column="294" />
               <folding />
             </state>
@@ -181,7 +205,7 @@
       <file leaf-file-name="main_examen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_examen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13328">
+            <state relative-caret-position="12784">
               <caret line="820" column="99" selection-start-line="820" selection-start-column="99" selection-end-line="820" selection-end-column="99" />
               <folding />
             </state>
@@ -1825,7 +1849,7 @@
       <map>
         <entry key="C:\D\app portables\DropboxPortableAHK\Dropbox\AndroidStudioProjects\PsicotecnicosTropa" value="4471332739000" />
         <entry key="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropa" value="4489882132158" />
-        <entry key="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial" value="4490228203459" />
+        <entry key="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial" value="4490270259144" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2278,16 +2302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2308,6 +2322,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2316,7 +2340,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PsicotecnicosTropa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="ExportApk.ApkPath" value="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app" />
@@ -2853,7 +2877,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.217695" sideWeight="0.38630807" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.686636" sideWeight="0.8850856" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24572127" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248848" sideWeight="0.6136919" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.4828851" order="10" side_tool="false" content_ui="tabs" />
@@ -2876,6 +2899,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="50" y="180" width="1496" height="826" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24572127" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3064,7 +3088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="1971" column="28" selection-start-line="1971" selection-start-column="24" selection-end-line="1971" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3072,7 +3095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3080,7 +3102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3825">
           <caret line="225" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3088,7 +3109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6154">
           <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3096,7 +3116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6052">
           <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3104,7 +3123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5967">
           <caret line="351" column="0" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3122,7 +3140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="350" column="0" selection-start-line="350" selection-start-column="0" selection-end-line="350" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3219,7 +3236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="898" column="23" selection-start-line="898" selection-start-column="23" selection-end-line="898" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3274,7 +3290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="48" column="53" selection-start-line="43" selection-start-column="8" selection-end-line="48" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3282,10 +3297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="832" column="36" selection-start-line="832" selection-start-column="36" selection-end-line="832" selection-end-column="36" />
-          <folding>
-            <element signature="e#33490#33669#0" expanded="false" />
-            <element signature="e#33668#33669#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3296,7 +3307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3307,13 +3317,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_examen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13328">
+        <state relative-caret-position="12784">
           <caret line="820" column="99" selection-start-line="820" selection-start-column="99" selection-end-line="820" selection-end-column="99" />
           <folding />
         </state>
@@ -3356,7 +3365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_resultado_exam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7208">
+        <state relative-caret-position="7123">
           <caret line="461" column="294" selection-start-line="461" selection-start-column="294" selection-end-line="461" selection-end-column="294" />
           <folding />
         </state>
@@ -3375,7 +3384,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="1156">
           <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
           <folding />
         </state>
@@ -3386,7 +3395,7 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="10948">
           <caret line="644" column="45" selection-start-line="644" selection-start-column="45" selection-end-line="644" selection-end-column="45" />
           <folding />
         </state>
