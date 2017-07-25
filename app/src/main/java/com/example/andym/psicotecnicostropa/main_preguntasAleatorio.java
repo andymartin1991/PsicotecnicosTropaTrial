@@ -1137,7 +1137,7 @@ public class main_preguntasAleatorio extends Activity {
             }
             ocultaralante();
             arreglo = 1;
-            if (num[cont.getCont()-1] > inmemo && num[cont.getCont()-1] <= outmemo && pos[cont.getCont()-1] == 0) {
+            if (num[cont.getCont()-1] >= inmemo && num[cont.getCont()-1] < outmemo && pos[cont.getCont()-1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                 RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
