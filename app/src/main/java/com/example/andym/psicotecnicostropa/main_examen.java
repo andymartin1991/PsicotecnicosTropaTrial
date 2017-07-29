@@ -8,7 +8,6 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.View;
@@ -24,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.example.andym.psicotecnicostropa.dto.Cronometro;
 import com.example.andym.psicotecnicostropa.dto.Notas;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.google.android.gms.ads.AdRequest;
@@ -43,6 +43,12 @@ public class main_examen extends Activity {
 
     Animation animrightatras = null;
     Animation animrightalante = null;
+
+    boolean pasusaexamen = false;
+    Thread hilo;
+    Cronometro cronometro;
+
+    public static boolean acabatiempo = false;
 
     static boolean acabar = false;
     static boolean guardado = false;
@@ -85,36 +91,37 @@ public class main_examen extends Activity {
     int posi;
     int memoria;
     static int tempo;
-    long cuentatiempo;
-    long guardatiempo;
-    CountDownTimer th;
+    //long cuentatiempo;
+    //long guardatiempo;
+    //CountDownTimer th;
     boolean arregloacabar = false;
     Button siguiente;
-    boolean arreglorevision;
+   // boolean arreglorevision;
 
     static Notas notas;
     ViewFlipper viewflipper;
+    InterstitialAd interstitial;
+    AdRequest adRequest;
 
     //hola
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
+        pasusaexamen = true;
+        acabatiempo = false;
         acabar = false;
         guardado = false;
         bloque = 1;
         posi = 0;
         memoria = 10000;//10000
-        tempo = 300;//300
-        cuentatiempo = tempo * 1000;
-        guardatiempo = cuentatiempo;
         arregloacabar = false;
-        arreglorevision = false;
+
 
         //////////////////////////////////////
-        final InterstitialAd interstitial = new InterstitialAd(this);
+        interstitial = new InterstitialAd(this);
         interstitial.setAdUnitId("ca-app-pub-3897421105469965/8623469338");
-        final AdRequest adRequest = new AdRequest.Builder().build();
+        adRequest = new AdRequest.Builder().build();
         interstitial.loadAd(adRequest);
         /////////////////////////////////////////////
         // Crear adView.
@@ -151,7 +158,6 @@ public class main_examen extends Activity {
         } else {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
-
 
 
         ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
@@ -605,45 +611,13 @@ public class main_examen extends Activity {
         cuentatras = (TextView) findViewById(R.id.cuentatras);
         cuentatras.setVisibility(View.VISIBLE);
 
-        th = new CountDownTimer(cuentatiempo, 1000) {
-            public void onTick(long millisUntilFinished) {
-                cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                guardatiempo = millisUntilFinished;
-                memoria();
-            }
+        cuentatras.setText("00:05:00");
 
-            public void onFinish() {
-                cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                new AlertDialog.Builder(main_examen.this)
-                        .setIcon(getResources().getDrawable(R.drawable.iexc))
-                        .setTitle(getString(R.string.atencion))
-                        .setMessage(getString(R.string.tiempoterminado))
-                        .setCancelable(false)
-                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @SuppressWarnings("deprecation")
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                posi = 0;
-                                bloque++;
-                                if (bloque == 8) {
-                                    acabar();
-                                    Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                    startActivity(resultado);
-                                    overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                } else {
-                                    imprimir(bloque, posi);
-                                    contador.setText((posi + 1) + "/15");
-                                    cuentabloque.setText(bloque + "/7");
-                                    cuentatiempo = 300 * 1000;
-                                    th.start();
-                                    limpiarselect();
-                                }
-                            }
-                        }).create().show();
-
-            }
-        }.start();
-
+        cronometro = new Cronometro("Cronometro por bloque", cuentatras);
+        hilo = new Thread(cronometro);
+        hilo.start();
+        Cronometro.reiniciar();
+        seacabotiempo();
 
         contador = (TextView) findViewById(R.id.conta);
         contador.setText("1/15");
@@ -658,9 +632,7 @@ public class main_examen extends Activity {
                 interstitial.show();
                 if (bloque == 7 && posi == 14) {
                     if (arregloacabar == false) {
-                        cuentatiempo = guardatiempo;
-                        th.cancel();
-                        th = null;
+                        Cronometro.pause();
                         siguiente.setEnabled(false);
                         new AlertDialog.Builder(main_examen.this)
                                 .setIcon(getResources().getDrawable(R.drawable.iexc))
@@ -673,46 +645,7 @@ public class main_examen extends Activity {
                                     public void onClick(DialogInterface dialog, int which) {
                                         siguiente.setEnabled(true);
                                         posi--;
-                                        th = new CountDownTimer(cuentatiempo, 1000) {
-                                            public void onTick(long millisUntilFinished) {
-                                                cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                                                guardatiempo = millisUntilFinished;
-                                                memoria();
-                                            }
-
-                                            public void onFinish() {
-                                                cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                                                new AlertDialog.Builder(main_examen.this)
-                                                        .setIcon(getResources().getDrawable(R.drawable.iexc))
-                                                        .setTitle(getString(R.string.atencion))
-                                                        .setMessage(getString(R.string.tiempoterminado))
-                                                        .setCancelable(false)
-                                                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                            @SuppressWarnings("deprecation")
-                                                            @Override
-                                                            public void onClick(DialogInterface dialog, int which) {
-                                                                interstitial.loadAd(adRequest);
-                                                                posi = 0;
-                                                                bloque++;
-                                                                if (bloque == 8) {
-                                                                    acabar();
-                                                                    Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                                                    startActivity(resultado);
-                                                                    overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-
-                                                                } else {
-                                                                    imprimir(bloque, posi);
-                                                                    contador.setText((posi + 1) + "/15");
-                                                                    cuentabloque.setText(bloque + "/7");
-                                                                    cuentatiempo = 300 * 1000;
-                                                                    th.start();
-                                                                    limpiarselect();
-                                                                }
-                                                            }
-                                                        }).create().show();
-
-                                            }
-                                        }.start();
+                                        Cronometro.pause();
                                     }
                                 })
                                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -741,9 +674,8 @@ public class main_examen extends Activity {
                         viewflipper.setInAnimation(animrightalante);
                         viewflipper.showPrevious();
                     } else {
-                        cuentatiempo = guardatiempo;
-                        th.cancel();
-                        th = null;
+
+                        Cronometro.pause();
                         siguiente.setEnabled(false);
                         new AlertDialog.Builder(main_examen.this)
                                 .setIcon(getResources().getDrawable(R.drawable.iexc))
@@ -755,57 +687,15 @@ public class main_examen extends Activity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         posi--;
-                                        th = new CountDownTimer(arreglorevisar(), 1000) {
-                                            public void onTick(long millisUntilFinished) {
-                                                cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                                                guardatiempo = millisUntilFinished;
-                                                siguiente.setEnabled(true);
-                                                memoria();
-                                            }
-
-                                            public void onFinish() {
-                                                cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                                                new AlertDialog.Builder(main_examen.this)
-                                                        .setIcon(getResources().getDrawable(R.drawable.iexc))
-                                                        .setTitle(getString(R.string.atencion))
-                                                        .setMessage(getString(R.string.tiempoterminado))
-                                                        .setCancelable(false)
-                                                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                            @SuppressWarnings("deprecation")
-                                                            @Override
-                                                            public void onClick(DialogInterface dialog, int which) {
-                                                                interstitial.loadAd(adRequest);
-                                                                posi = 0;
-                                                                bloque++;
-                                                                if (bloque == 8) {
-                                                                    acabar();
-                                                                    Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                                                    startActivity(resultado);
-                                                                    overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-
-                                                                } else {
-                                                                    imprimir(bloque, posi);
-                                                                    contador.setText((posi + 1) + "/15");
-                                                                    cuentabloque.setText(bloque + "/7");
-                                                                    arreglorevision = true;
-                                                                    th.cancel();
-                                                                    th = null;
-                                                                    arreglocahupu();
-                                                                    limpiarselect();
-                                                                }
-                                                                siguiente.setEnabled(true);
-
-                                                            }
-                                                        }).create().show();
-
-                                            }
-                                        }.start();
+                                        Cronometro.pause();
+                                        siguiente.setEnabled(true);
                                     }
                                 })
                                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                     @SuppressWarnings("deprecation")
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
+                                        interstitial.loadAd(adRequest);
                                         posi = 0;
                                         bloque++;
                                         siguiente.setEnabled(true);
@@ -813,53 +703,15 @@ public class main_examen extends Activity {
                                             imprimir(bloque, posi);
                                             cuentabloque.setText(bloque + "/7");
                                             contador.setText((posi + 1) + "/15");
-                                            cuentatiempo = tempo * 1000;
-                                            th = new CountDownTimer(cuentatiempo, 1000) {
-                                                public void onTick(long millisUntilFinished) {
-                                                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                                                    guardatiempo = millisUntilFinished;
-                                                    memoria();
-                                                }
-
-                                                public void onFinish() {
-                                                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                                                    new AlertDialog.Builder(main_examen.this)
-                                                            .setIcon(getResources().getDrawable(R.drawable.iexc))
-                                                            .setTitle(getString(R.string.atencion))
-                                                            .setMessage(getString(R.string.tiempoterminado))
-                                                            .setCancelable(false)
-                                                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                                @SuppressWarnings("deprecation")
-                                                                @Override
-                                                                public void onClick(DialogInterface dialog, int which) {
-                                                                    interstitial.loadAd(adRequest);
-                                                                    posi = 0;
-                                                                    bloque++;
-                                                                    if (bloque == 8) {
-                                                                        acabar();
-                                                                        Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                                                        startActivity(resultado);
-                                                                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                                                    } else {
-                                                                        imprimir(bloque, posi);
-                                                                        contador.setText((posi + 1) + "/15");
-                                                                        cuentabloque.setText(bloque + "/7");
-                                                                        cuentatiempo = 300 * 1000;
-                                                                        th.start();
-                                                                        limpiarselect();
-                                                                    }
-                                                                }
-                                                            }).create().show();
-
-                                                }
-                                            }.start();
+                                            Cronometro.reiniciar();
+                                            memoria();
+                                            cuentatras.setText("00:05:00");
                                         }
                                         viewflipper.setInAnimation(animrightalante);
                                         viewflipper.showPrevious();
                                         limpiarselect();
                                     }
                                 }).create().show();
-                        memoria();
                     }
                 } else {
                     //cuando acabo el examen
@@ -916,19 +768,8 @@ public class main_examen extends Activity {
         notas.setNespa(nespa);
         notas.setNper(nper);
         notas.setNmemo(nmemo);
-
     }
 
-    private long arreglorevisar() {
-        long valor = 0;
-        if(arreglorevision == true){
-            valor = tempo*1000;
-            arreglorevision = false;
-        }else{
-            valor = guardatiempo;
-        }
-        return valor;
-    }
 
     private void limpiarselect() {
         a.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -1863,7 +1704,7 @@ public class main_examen extends Activity {
         c = (RelativeLayout) findViewById(R.id.c);
         d = (RelativeLayout) findViewById(R.id.d);
 
-        if(posi!=15){
+        if (posi != 15) {
             limpiarselect();
         }
 
@@ -2099,11 +1940,9 @@ public class main_examen extends Activity {
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            try {
-                cuentatiempo = guardatiempo;
+            if(pasusaexamen == true){
                 if (acabar == false) {
-                    th.cancel();
-                    th = null;
+                    Cronometro.pause();
                     new AlertDialog.Builder(this)
                             .setIcon(R.drawable.pause)
                             .setTitle(getString(R.string.Pausa))
@@ -2113,46 +1952,7 @@ public class main_examen extends Activity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int which) {
-                                    th = new CountDownTimer(arreglorevisar(), 1000) {
-                                        public void onTick(long millisUntilFinished) {
-                                            cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                                            guardatiempo = millisUntilFinished;
-                                        }
-
-                                        public void onFinish() {
-                                            cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                                            new AlertDialog.Builder(main_examen.this)
-                                                    .setIcon(getResources().getDrawable(R.drawable.iexc))
-                                                    .setTitle(getString(R.string.atencion))
-                                                    .setMessage(getString(R.string.tiempoterminado))
-                                                    .setCancelable(false)
-                                                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                                        @SuppressWarnings("deprecation")
-                                                        @Override
-                                                        public void onClick(DialogInterface dialog, int which) {
-                                                            posi = 0;
-                                                            bloque++;
-                                                            if (bloque == 8) {
-                                                                acabar();
-                                                                Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                                                startActivity(resultado);
-                                                                overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                                            } else {
-                                                                imprimir(bloque, posi);
-                                                                contador.setText((posi + 1) + "/15");
-                                                                cuentabloque.setText(bloque + "/7");
-                                                                arreglorevision = true;
-                                                                th.cancel();
-                                                                th = null;
-                                                                arreglocahupu();
-                                                                memoria();
-                                                                limpiarselect();
-                                                            }
-                                                        }
-                                                    }).create().show();
-
-                                        }
-                                    }.start();
+                                    Cronometro.pause();
                                 }
                             })
                             .setPositiveButton(getString(R.string.salir),
@@ -2160,10 +1960,7 @@ public class main_examen extends Activity {
                                         @Override
                                         public void onClick(DialogInterface dialog,
                                                             int which) {
-                                            th = null;
-                                            finish();
-
-
+                                            System.exit(0);
                                         }
                                     }).show();
 
@@ -2176,7 +1973,7 @@ public class main_examen extends Activity {
                             .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    finish();
+                                    System.exit(0);
                                 }
                             })
                             .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
@@ -2187,13 +1984,13 @@ public class main_examen extends Activity {
                                 }
                             }).show();
                 }
-            }catch(Exception e){
+            } else{
 
                 Toast toast1 =
                         Toast.makeText(getApplicationContext(),
                                 getString(R.string.nopausa), Toast.LENGTH_SHORT);
                 toast1.show();
-
+                pasusaexamen = false;
             }
             return true;
 
@@ -2248,46 +2045,10 @@ public class main_examen extends Activity {
             pregunta.setVisibility(View.VISIBLE);
             viewflipper.setInAnimation(animrightalante);
             viewflipper.showPrevious();
+            pasusaexamen = true;
 
-            th = new CountDownTimer(arreglorevisar(), 1000) {
-                public void onTick(long millisUntilFinished) {
-                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                    guardatiempo = millisUntilFinished;
-                }
-
-                public void onFinish() {
-                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                    new AlertDialog.Builder(main_examen.this)
-                            .setIcon(getResources().getDrawable(R.drawable.iexc))
-                            .setTitle(getString(R.string.atencion))
-                            .setMessage(getString(R.string.tiempoterminado))
-                            .setCancelable(false)
-                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                @SuppressWarnings("deprecation")
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    posi = 0;
-                                    bloque++;
-                                    if (bloque == 8) {
-                                        acabar();
-                                        Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                        startActivity(resultado);
-                                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                    } else {
-                                        imprimir(bloque, posi);
-                                        contador.setText((posi + 1) + "/15");
-                                        cuentabloque.setText(bloque + "/7");
-                                        arreglorevision = true;
-                                        th.cancel();
-                                        th = null;
-                                        arreglocahupu();
-                                        memoria();
-                                    }
-                                }
-                            }).create().show();
-
-                }
-            }.start();
+            Cronometro.pause();
+            seacabotiempo();
         }
     };
 
@@ -2298,14 +2059,7 @@ public class main_examen extends Activity {
         Thread t = new Thread() {
             public void run() {
                 try {
-                    if (posi == 0) {
-                        cuentatiempo = tempo * 1000;
-                        cuentatras.setText(getString(R.string.tiemporesdta) + " " + ((cuentatiempo / 1000) - 1) + " " + getString(R.string.segundos));
-                    } else {
-                        cuentatiempo = guardatiempo;
-                    }
-                    th.cancel();
-                    th = null;
+                    Cronometro.pause();
                     sleep(milisegundos);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -2333,6 +2087,7 @@ public class main_examen extends Activity {
             pregunta.setVisibility(View.GONE);
             atras.setVisibility(View.INVISIBLE);
             alante.setVisibility(View.INVISIBLE);
+            pasusaexamen = false;
             esperarYCerrar(memoria);
         }
         if (bloque != 6) {
@@ -2346,11 +2101,9 @@ public class main_examen extends Activity {
     private void acabar() {
         siguiente.setEnabled(true);
         if (acabar == false) {
-            //th.cancel();
-            th = null;
+            //th = null;
         }
         acabar = true;
-        th = null;
         arregloacabar = true;
         a.setEnabled(false);
         b.setEnabled(false);
@@ -2365,52 +2118,73 @@ public class main_examen extends Activity {
         prohibido.setImageResource(getResources().getIdentifier("drawable/" + "prohibido", null, getPackageName()));
     }
 
-    private void arreglocahupu(){
 
-            th = new CountDownTimer(arreglorevisar(), 1000) {
-                public void onTick(long millisUntilFinished) {
-                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
-                    guardatiempo = millisUntilFinished;
-                    siguiente.setEnabled(true);
-                    memoria();
+    public void seacabotiempo() {
+
+        final Handler handler = new Handler();
+
+        Thread t = new Thread() {
+            public void run() {
+                try {
+                    boolean kk = true;
+                    while(kk == true) {
+                        sleep(10);
+                        if (acabatiempo == true) {
+                            handler.post(seacabo);
+                            kk = false;
+                            acabatiempo = false;
+                        }
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
 
-                public void onFinish() {
-                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
-                    new AlertDialog.Builder(main_examen.this)
-                            .setIcon(getResources().getDrawable(R.drawable.iexc))
-                            .setTitle(getString(R.string.atencion))
-                            .setMessage(getString(R.string.tiempoterminado))
-                            .setCancelable(false)
-                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                @SuppressWarnings("deprecation")
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    posi = 0;
-                                    bloque++;
-                                    if (bloque == 8) {
-                                        acabar();
-                                        Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                                        startActivity(resultado);
-                                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
 
-                                    } else {
-                                        imprimir(bloque, posi);
-                                        contador.setText((posi + 1) + "/15");
-                                        cuentabloque.setText(bloque + "/7");
-                                        arreglorevision = true;
-                                        th.cancel();
-                                        th = null;
-                                        arreglocahupu();
-                                        limpiarselect();
-                                    }
-                                    siguiente.setEnabled(true);
+            }
+        };
 
-                                }
-                            }).create().show();
+        t.start();
 
-                }
-            }.start();
+    }
+
+    Runnable seacabo = new Runnable() {
+
+        @Override
+        public void run() {
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(main_examen.this);
+            builder
+                    .setIcon(getResources().getDrawable(R.drawable.iexc))
+                    .setTitle(getString(R.string.atencion))
+                    .setMessage(getString(R.string.tiempoterminado))
+                    .setCancelable(false)
+                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @SuppressWarnings("deprecation")
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        posi = 0;
+                        bloque++;
+                        if (bloque == 8) {
+                            acabar();
+                            Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
+                            startActivity(resultado);
+                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                        } else {
+                            interstitial.loadAd(adRequest);
+                            imprimir(bloque, posi);
+                            contador.setText((posi + 1) + "/15");
+                            cuentabloque.setText(bloque + "/7");
+                            Cronometro.reiniciar();
+                            limpiarselect();
+                            seacabotiempo();
+                            memoria();
+                            cuentatras.setText("00:05:00");
+                        }
+                        }
+                    }).create().show();
+
         }
+    };
+
 
 }
