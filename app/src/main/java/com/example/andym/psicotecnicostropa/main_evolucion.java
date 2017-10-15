@@ -1,6 +1,10 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -77,6 +81,7 @@ public class main_evolucion extends Activity {
             lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView adapter, View view, int position, long arg) {
+                    trial();
                     File a = new File(ruta_sd.getAbsolutePath(), nombrefiche.get(position));
                     String json = "";
                     try {
@@ -349,4 +354,28 @@ public class main_evolucion extends Activity {
         adView.loadAd(adRequest);
     }
 
+    private void trial() {
+        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
+        dialogo1.setIcon(getResources().getDrawable(R.drawable.iexc));
+        dialogo1.setTitle(getString(R.string.atencion));
+        dialogo1.setMessage(getString(R.string.trial));
+        dialogo1.setCancelable(false);
+        dialogo1.setPositiveButton(getString(R.string.comprar),
+
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogo1, int id) {
+                        final Intent intent = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial"));
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                                | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                        startActivity(intent);
+                    }
+                });
+        dialogo1.setNegativeButton(getString(R.string.ahorano),
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogo1, int id) {
+                    }
+                });
+        dialogo1.show();
+    }
 }
