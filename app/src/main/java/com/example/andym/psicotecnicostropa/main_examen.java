@@ -32,6 +32,8 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 
@@ -108,13 +110,25 @@ public class main_examen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
+        LinearLayout padre = (LinearLayout) findViewById(R.id.lytMain);
+        RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
+        Calendar cc1 = new GregorianCalendar();
+        int dia = cc1.get(Calendar.DAY_OF_MONTH);
+        int mes = cc1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+            subcontenedor.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
+
         pasusaexamen = true;
         acabatiempo = false;
         acabar = false;
         guardado = false;
         bloque = 1;
         posi = 0;
-        memoria = 10000;//10000
+        memoria = 1000;//10000
         arregloacabar = false;
 
 

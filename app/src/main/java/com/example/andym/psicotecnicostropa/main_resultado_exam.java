@@ -39,7 +39,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 /**
@@ -50,13 +52,24 @@ public class main_resultado_exam extends Activity {
 
     TextView mostrar, nota, notabar;
     EditText baremo;
-    Button calcular, compartir, introbar, guardar;
+    Button calcular, introbar, guardar;
+    LinearLayout compartir;
     Notas notas;
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
+
+        LinearLayout padre = (LinearLayout) findViewById(R.id.lytMain);
+        Calendar cc1 = new GregorianCalendar();
+        int dia = cc1.get(Calendar.DAY_OF_MONTH);
+        int mes = cc1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         //////////////////////////////////////
         final InterstitialAd interstitial = new InterstitialAd(this);
@@ -444,7 +457,7 @@ public class main_resultado_exam extends Activity {
             }
         });
 
-        compartir = (Button) findViewById(R.id.compartir);
+        compartir = (LinearLayout) findViewById(R.id.compartir);
         compartir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -502,7 +515,7 @@ public class main_resultado_exam extends Activity {
                     if (kk > 0 && kk < 41) {
                         if (notas.getNotaredondeadabar() != 0) {
                             Date date = new Date();
-                            DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                            DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH_mm_ss");
                             String convertido = fechaHora.format(date);
 
                             File ruta_sd;

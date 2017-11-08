@@ -21,6 +21,8 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 
 import java.nio.charset.Charset;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class main_trucos extends Activity {
 
@@ -62,6 +64,16 @@ public class main_trucos extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_trucos);
+
+        LinearLayout padre = (LinearLayout) findViewById(R.id.lytMain);
+        Calendar cc1 = new GregorianCalendar();
+        int dia = cc1.get(Calendar.DAY_OF_MONTH);
+        int mes = cc1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         // Crear adView.
         AdView adView = new AdView(this);

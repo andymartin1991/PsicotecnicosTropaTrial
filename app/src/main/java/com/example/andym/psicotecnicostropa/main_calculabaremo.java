@@ -23,6 +23,8 @@ import com.google.android.gms.ads.InterstitialAd;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  * Created by andym on 21/04/2017.
@@ -40,6 +42,16 @@ public class main_calculabaremo extends Activity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_calculabaremo);
+
+        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         //////////////////////////////////////
         final InterstitialAd interstitial = new InterstitialAd(this);

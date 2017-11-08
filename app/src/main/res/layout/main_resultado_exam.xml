@@ -27,15 +27,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <LinearLayout
                         android:id="@+id/compartir"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentEnd="true"
+
+                        android:background="@android:drawable/ic_menu_share"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:background="@drawable/boton_pregunta"
-                        android:drawableLeft="@drawable/compartir" />
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginEnd="12dp" />
 
                     <TextView
                         android:id="@+id/titulo"
