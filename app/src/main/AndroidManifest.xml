@@ -41,6 +41,7 @@
         <activity android:name=".main_fisica"></activity>
         <activity android:name=".main_trucos"></activity>
         <activity android:name=".main_academia"></activity>
+        <activity android:name=".main_estudio_academia_sub"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,12 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -29,14 +32,21 @@ public class main_academia extends Activity {
 
     URLConnection conn = null;
     String id;
-    Button volver;
+    Button volver, estudio;
     TextView error, titulo, username;
     LinearLayout emer, verificado;
     JSONObject objetouser;
 
+    public static String correo;
+    public static String password;
+    public static String academia;
+    public static String academianame;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_academia);
+
+        final boolean[] entra = {true};
 
         ScrollView padre = (ScrollView)findViewById(R.id.padre);
         Calendar c1 = new GregorianCalendar();
@@ -48,10 +58,10 @@ public class main_academia extends Activity {
 
         }
 
-        String correo = getIntent().getStringExtra("correo");
-        String password = getIntent().getStringExtra("pass");
-        String academia = getIntent().getStringExtra("academia");
-        final String academianame = getIntent().getStringExtra("nameacademia");
+        correo = getIntent().getStringExtra("correo");
+        password = getIntent().getStringExtra("pass");
+        academia = getIntent().getStringExtra("academia");
+        academianame = getIntent().getStringExtra("nameacademia");
 
         volver = (Button)findViewById(R.id.atras);
         error = (TextView) findViewById(R.id.fallo);
@@ -127,6 +137,30 @@ public class main_academia extends Activity {
             }
         }).start();
 
+        estudio = (Button)findViewById(R.id.estudio);
+        estudio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (entra[0] == true) {
+                    entra[0] = false;
+                    Animation animation = AnimationUtils.loadAnimation(
+                            getApplicationContext(), R.anim.rotar);
+                    estudio.startAnimation(animation);
+                    new Thread(new Runnable() {
+                        public void run() {
+                            try {
+                                Thread.sleep(500);
+                            } catch (InterruptedException e) {
+                            }
+                            startActivity(new Intent(main_academia.this, main_estudio_academia_sub.class));
+                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                            entra[0] = true;
+                        }
+                    }).start();
+
+                }
+            }
+        });
 
 
     }

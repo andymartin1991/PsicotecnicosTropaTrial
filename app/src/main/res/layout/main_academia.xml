@@ -91,12 +91,17 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button8"
+                                android:id="@+id/estudio"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:layout_margin="5dp"
                                 android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
+                                android:background="@drawable/boton_menu"
+                                android:drawableTop="@drawable/test"
+                                android:padding="5dp"
+                                android:text="@string/Estudio"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
 
                         </LinearLayout>
 
