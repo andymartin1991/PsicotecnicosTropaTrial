@@ -3,18 +3,28 @@ package com.example.andym.psicotecnicostropa;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-
 import com.example.andym.psicotecnicostropa.dto.AdapterDirectivos;
+import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.menu_optTest;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -24,9 +34,12 @@ import java.util.GregorianCalendar;
  */
 
 public class main_estudio_academia_sub extends Activity {
-    public static String test;
+    private String test;
     private String listview_array[];
-
+    URLConnection conn = null;
+    public static Preguntas[] objetPreguntas;
+    //JSONObject objetouser;
+    ArrayList<JSONObject> objetouser;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,15 +151,55 @@ public class main_estudio_academia_sub extends Activity {
                         break;
 
                 }
-                Intent preguntas = new Intent(main_estudio_academia_sub.this, main_preguntas.class);
-                preguntas.putExtra("tipo", test);
-                preguntas.putExtra("correo", main_academia.correo);
-                preguntas.putExtra("pass", main_academia.password);
-                preguntas.putExtra("academia", main_academia.academia);
-                preguntas.putExtra("nameacademia", main_academia.academianame);
 
-                startActivity(preguntas);
-                overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                final String[] contents = {""};
+                try {
+                    conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/preguntas.php?idACA="+main_academia.idACAM+"&test="+test).openConnection();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                final Handler handler = new Handler();
+                final InputStream[] in = new InputStream[1];
+                new Thread(new Runnable() {
+                    public void run() {
+                        try {
+                            in[0] = conn.getInputStream();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            contents[0] = readStream(in[0]).toString();
+
+                            try {
+                                JSONObject objetousuario = new JSONObject(contents[0]);
+                                JSONArray myJsonArray = objetousuario.getJSONArray("usuario");
+                                //id = "";
+                               // if(myJsonArray.length()==1) {
+                                objetouser = new ArrayList();
+                                int i = 0;
+                                try {
+                                    while (true) {
+                                        objetouser.add(myJsonArray.getJSONObject(i));
+                                        i++;
+                                    }
+                                }catch(Exception e){
+
+                                }
+                                //id = objetouser.getString("ID_USUARIO");
+                                handler.post(userpassok);
+                               // }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                //textoError = contents[0];
+                                //handler.post(userpasserror);
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }).start();
+
+
             }
 
         });
@@ -154,5 +207,92 @@ public class main_estudio_academia_sub extends Activity {
         registerForContextMenu(lista);
 
     }
+
+    public String readStream(InputStream in) throws IOException {
+        BufferedReader r = null;
+        r = new BufferedReader(new InputStreamReader(in));
+        StringBuilder total = new StringBuilder();
+        String line;
+        while ((line = r.readLine()) != null) {
+            total.append(line);
+        }
+        if (r != null) {
+            r.close();
+        }
+        in.close();
+        return total.toString();
+    }
+
+    final Runnable userpassok = new Runnable() {
+        @Override
+        public void run() {
+
+            try{
+                //String id = "Bienvenido "+objetouser.get(0).getString("ID_TEST");
+                /*Toast toast1 =
+                        Toast.makeText(getApplicationContext(), objetouser.toString(), Toast.LENGTH_SHORT);
+                toast1.show();*/
+
+                objetPreguntas = new Preguntas[objetouser.size()];
+                for (int i = 0; i < objetouser.size(); i++) {
+                    String solucion = "", imgSol = "";
+                    switch (objetouser.get(i).getString("SOLUCION")){
+                        case "a":
+                            if(objetouser.get(i).getString("RES_A").equals("")) {
+                            }else{
+                                solucion = ("A)" + objetouser.get(i).getString("RES_A"));
+                            }
+                            imgSol =  objetouser.get(i).getString("IMG_A");
+                            break;
+                        case "b":
+                            if(!objetouser.get(i).getString("RES_B").equals("")) {
+                            }else{
+                                solucion = ("B)" + objetouser.get(i).getString("RES_B"));
+                            }
+                            imgSol =  objetouser.get(i).getString("IMG_B");
+                            break;
+                        case "c":
+                            if(!objetouser.get(i).getString("RES_C").equals("")) {
+                            }else{
+                                solucion = ("C)"+objetouser.get(i).getString("RES_C"));
+                            }
+                            imgSol =  objetouser.get(i).getString("IMG_C");
+                            break;
+                        case "d":
+                            if(!objetouser.get(i).getString("RES_D").equals("")) {
+                            }else{
+                                solucion = ("D)"+objetouser.get(i).getString("RES_D"));
+                            }
+                            imgSol =  objetouser.get(i).getString("IMG_D");
+                            break;
+                    }
+                    String c = "";
+                    String d = "";
+                    if(objetouser.get(i).getString("RES_C").equals("") && objetouser.get(i).getString("IMG_C").equals("")) {
+
+                    }else{
+                        c = ("C)"+objetouser.get(i).getString("RES_C"));
+                    }
+                    if(objetouser.get(i).getString("RES_D").equals("") && objetouser.get(i).getString("IMG_D").equals("")){
+
+                    }else{
+                        d = ("D)"+objetouser.get(i).getString("RES_D"));
+                    }
+                    objetPreguntas[i] = new Preguntas(objetouser.get(i).getString("PREGUNTA"), "A)"+objetouser.get(i).getString("RES_A"), "B)"+objetouser.get(i).getString("RES_B"),
+                            c, d, solucion, objetouser.get(i).getString("EXPLICACION"),
+                            objetouser.get(i).getString("IMG_PRE"), objetouser.get(i).getString("IMG_A"), objetouser.get(i).getString("IMG_B"), objetouser.get(i).getString("IMG_C"),
+                            objetouser.get(i).getString("IMG_D"), imgSol, objetouser.get(i).getString("IMG_EXPLI"), 0);
+
+                }
+                Intent preguntas = new Intent(main_estudio_academia_sub.this, main_preguntas_academia.class);
+                preguntas.putExtra("tipo", test);
+
+                startActivity(preguntas);
+                overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+            }catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    };
 
 }

@@ -995,9 +995,12 @@ public class main_principal extends Activity {
         builder2.setCancelable(false);
         builder2.setPositiveButton("ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
+                correo.setText("andymartin1991@gmail.com");
+                password.setText("permiso1991");
+                search.setText("PsicotecnicosTropa");
 
                 if(correo.getText().toString() != null && !correo.getText().toString().equals("")){
-                    Correo = correo.getText().toString();
+                   Correo = correo.getText().toString();
                 }
                 if(password.getText().toString() != null && !password.getText().toString().equals("")){
                     Password = password.getText().toString();
@@ -1005,6 +1008,8 @@ public class main_principal extends Activity {
                 if(aca[0].toString() != null && !aca[0].toString().equals("")){
                     Academia = aca[0].toString();
                 }
+                Academia = search.getText().toString();
+
                 if(Correo.equals("") || Password.equals("") || Academia.equals("")){
                     Toast mensaje = Toast.makeText(getApplicationContext(),
                             "Los campos son obligatorios", Toast.LENGTH_SHORT);

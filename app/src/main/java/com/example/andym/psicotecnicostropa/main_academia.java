@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.ScrollView;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -36,11 +39,16 @@ public class main_academia extends Activity {
     TextView error, titulo, username;
     LinearLayout emer, verificado;
     JSONObject objetouser;
+    String textoError = "";
+    TableLayout tablabotones;
+    ProgressBar carga;
+
 
     public static String correo;
     public static String password;
     public static String academia;
     public static String academianame;
+    public static String idACAM;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +77,8 @@ public class main_academia extends Activity {
         verificado = (LinearLayout)findViewById(R.id.verificado);
         titulo = (TextView) findViewById(R.id.title);
         username = (TextView) findViewById(R.id.nameusu);
+        tablabotones = (TableLayout) findViewById(R.id.tablaBotones);
+        carga = (ProgressBar) findViewById(R.id.cargacademia);
 
         final String[] contents = {""};
         try {
@@ -82,7 +92,8 @@ public class main_academia extends Activity {
             public void run() {
                 emer.setVisibility(View.VISIBLE);
                 verificado.setVisibility(View.GONE);
-                error.setText(getString(R.string.errorusuario));
+                error.setText(Html.fromHtml(textoError));
+                carga.setVisibility(View.GONE);
                 volver.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -98,8 +109,11 @@ public class main_academia extends Activity {
                 emer.setVisibility(View.GONE);
                 verificado.setVisibility(View.VISIBLE);
                 titulo.setText(academianame);
+                tablabotones.setVisibility(View.VISIBLE);
+                carga.setVisibility(View.GONE);
                 try{
                     username.setText("Bienvenido "+objetouser.getString("NOMBRE_ALU"));
+                    idACAM = objetouser.getString("ID_ACADEMIA");
                 }catch (JSONException e) {
                 }
             }
@@ -129,6 +143,7 @@ public class main_academia extends Activity {
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
+                        textoError = contents[0];
                         handler.post(userpasserror);
                     }
                 } catch (IOException e) {

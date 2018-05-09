@@ -73,11 +73,13 @@
                     android:textColor="@color/BLANCO" />
 
                 <TableLayout
+                    android:id="@+id/tablaBotones"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical|center_horizontal|center"
                     android:gravity="center_horizontal|center"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:visibility="gone">
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -234,6 +236,13 @@
                         </LinearLayout>
                     </TableRow>
                 </TableLayout>
+
+                <ProgressBar
+                    android:id="@+id/cargacademia"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
             </LinearLayout>
 
         </LinearLayout>
