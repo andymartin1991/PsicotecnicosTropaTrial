@@ -29,15 +29,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderA;
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderB;
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderC;
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderD;
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderExpl;
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderPre;
-import com.example.andym.psicotecnicostropa.dto.ImageLoaderSol;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderA;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderB;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderC;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderD;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderExpl;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderPre;
+import com.example.andym.psicotecnicostropa.implementaciones.ImageLoaderSol;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
-import com.example.andym.psicotecnicostropa.dto.contador;
+import com.example.andym.psicotecnicostropa.implementaciones.contador;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
@@ -255,7 +255,7 @@ public class main_preguntas_academia extends Activity {
             @Override
             public void onClick(View v) {
                 if (bpre && ba && bb && bc && bd && bsol && bexpl) {
-                    limpiaImgUrl();
+                        limpiaImgUrl();
                     interstitial.show();
                     avanza();
                     colocar++;
