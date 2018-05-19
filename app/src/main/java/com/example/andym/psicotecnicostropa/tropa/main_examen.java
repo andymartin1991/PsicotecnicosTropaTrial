@@ -24,9 +24,9 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.R;
-import com.example.andym.psicotecnicostropa.dto.Cronometro;
 import com.example.andym.psicotecnicostropa.tropa.dtoTropa.Notas;
 import com.example.andym.psicotecnicostropa.tropa.dtoTropa.Preguntas;
+import com.example.andym.psicotecnicostropa.tropa.implementacionesTropa.Cronometro;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;

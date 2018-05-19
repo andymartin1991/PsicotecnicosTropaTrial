@@ -22,42 +22,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34eb36d5-13e5-40f6-9130-c0b19af3f9f4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/contador.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/Notas.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/dtoTropa/Notas.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/Preguntas.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/dtoTropa/Preguntas.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/comunicador.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/dtoTropa/comunicador.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/Cronometro.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/Cronometro.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderA.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderA.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderB.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderB.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderC.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderD.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderD.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderExpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderExpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderPre.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderPre.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/ImageLoaderSol.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderSol.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/implementaciones/textotruco.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/textotruco.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_academia.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_academia.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_calculabaremo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_calculabaremo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_contacto.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_contacto.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_estudio_academia_sub.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_estudio_academia_sub.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_evolucion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_evolucion.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_examen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_fisica.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_fisica.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_info.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_info.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_optTipo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_optTipo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_optTipoFatiga.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_optTipoFatiga.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasAleatorio.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntasAleatorio.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasFatiga.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntasFatiga.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas_academia.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas_academia.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_resultado_exam.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_resultado_exam.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_trucos.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_academia.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_academia.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_estudio_academia_sub.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_estudio_academia_sub.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas_academia.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_preguntas_academia.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderA.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderB.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderC.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderD.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderExpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderExpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderPre.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderPre.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderSol.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/ImageLoaderSol.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/textotruco.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/textotruco.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java" />
     </list>
     <ignored path="PsicotecnicosTropa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,38 +79,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_fisica.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_fisica.java">
+      <file leaf-file-name="main_estudio_academia_sub.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_estudio_academia_sub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_calculabaremo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_calculabaremo.java">
+      <file leaf-file-name="main_preguntas_academia.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_preguntas_academia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="281">
+              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_principal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java">
+      <file leaf-file-name="main_trucos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="248">
+              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_examen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="630" column="32" lean-forward="false" selection-start-line="630" selection-start-column="32" selection-end-line="630" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main_academia.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_academia.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_academia.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
@@ -141,7 +145,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contador.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/contador.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -161,31 +165,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="textotruco.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/textotruco.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Preguntas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/dtoTropa/Preguntas.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_preguntas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -1967,12 +1961,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_fisica.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/menu_opttest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/Cronometro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_optipo.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colores.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_splash.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntas.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_preguntasAleatorio.java" />
@@ -2018,6 +2006,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_academia.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/dtoTropa/Preguntas.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/contador.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas_academia.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_academia.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_estudio_academia_sub.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_preguntas_academia.java" />
       </list>
     </option>
   </component>
@@ -2173,7 +2167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dtoTropa" />
+              <option name="myItemId" value="academia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2205,7 +2199,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="device.picker.selection" value="711KPBF0589261" />
+    <property name="device.picker.selection" value="Pixel_2_XL_API_26" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="app" />
@@ -2322,7 +2316,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526715782785" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526717774511" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2370,7 +2364,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526715782785" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526717774511" />
       </method>
     </configuration>
     <configuration default="true" type="AppEngineRunConfiguration" factoryName="App Engine DevAppServer">
@@ -2576,7 +2570,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526715782785" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526717774511" />
       </method>
     </configuration>
     <list size="1">
@@ -2778,7 +2772,7 @@
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.63875306" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32628062" sideWeight="0.46577018" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.089242056" sideWeight="0.5385935" order="5" side_tool="true" content_ui="tabs" />
@@ -2794,7 +2788,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.502445" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5809628" sideWeight="0.46140653" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35448578" sideWeight="0.46140653" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4953917" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2907,8 +2901,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas_academia.java</url>
-          <line>1311</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_preguntas_academia.java</url>
+          <line>1165</line>
           <properties />
           <option name="timeStamp" value="348" />
         </line-breakpoint>
@@ -3103,14 +3097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="186" column="65" lean-forward="false" selection-start-line="186" selection-start-column="65" selection-end-line="186" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/menu_optTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3173,7 +3159,7 @@
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#718#719#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3202,14 +3188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/textotruco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_preguntas.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
@@ -3221,36 +3199,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_estudio_academia_sub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4012">
-          <caret line="263" column="87" lean-forward="false" selection-start-line="263" selection-start-column="87" selection-end-line="263" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_preguntas_academia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4454">
-          <caret line="264" column="65" lean-forward="false" selection-start-line="264" selection-start-column="65" selection-end-line="264" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/numerico.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3314,15 +3266,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_academia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3356,6 +3300,60 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/implementacionesTropa/textotruco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_trucos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="630" column="32" lean-forward="false" selection-start-line="630" selection-start-column="32" selection-end-line="630" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_academia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_estudio_academia_sub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/academia/main_preguntas_academia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

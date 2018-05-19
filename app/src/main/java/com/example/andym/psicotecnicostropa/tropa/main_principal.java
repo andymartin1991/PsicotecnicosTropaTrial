@@ -24,6 +24,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.R;
+import com.example.andym.psicotecnicostropa.tropa.academia.main_academia;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
