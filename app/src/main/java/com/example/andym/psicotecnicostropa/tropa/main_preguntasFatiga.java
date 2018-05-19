@@ -330,7 +330,7 @@ public class main_preguntasFatiga extends Activity {
         for (int i = 0; i < cantidad; i++) {
             pre[i] = new Preguntas(
                     pregunta[num[i]], resA[num[i]], resB[num[i]], resC[num[i]], resD[num[i]], sol[num[i]], expliSol[num[i]], imgPre[num[i]],
-                    imgA[num[i]], imgB[num[i]], imgC[num[i]], imgD[num[i]], imgSol[num[i]], imgExpli[num[i]], respulsada[num[i]]);
+                    imgA[num[i]], imgB[num[i]], imgC[num[i]], imgD[num[i]], imgSol[num[i]], imgExpli[num[i]], respulsada[num[i]],"");
         }
 
         final Button alante = (Button) findViewById(R.id.alante);

@@ -1177,7 +1177,7 @@ public class main_preguntas_academia extends Activity {
         return null;
     }
 
-    private void limpiaImgUrl(){
+    public static void limpiaImgUrl(){
         bpre = false;
         ba = false;
         bb = false;

@@ -207,7 +207,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueverbal[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         int h = 0, cantidad = 16, rango = pregunta.length;
         nverb = new int[cantidad];
@@ -245,7 +245,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquenumerico[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         h = 0;
         cantidad = 16;
@@ -285,7 +285,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueespacial[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         h = 0;
         cantidad = 16;
@@ -325,7 +325,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquemecanico[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         h = 0;
         cantidad = 16;
@@ -365,7 +365,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueperceptiva[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         h = 0;
         cantidad = 16;
@@ -405,7 +405,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquememoria[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         h = 0;
         cantidad = 16;
@@ -445,7 +445,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueabstrapto[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
         h = 0;
         cantidad = 16;

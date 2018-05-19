@@ -42,7 +42,7 @@ public class main_preguntasAleatorio extends Activity {
     Preguntas[] pre;
     contador cont;
     int[] pos;
-    //int colocar = 0;
+    int colocar = 0;
     int inmemo = 0;
     int outmemo = 0;
     int tempomemoria = 10000;//10000
@@ -832,7 +832,7 @@ public class main_preguntasAleatorio extends Activity {
         for (int i = 0; i < cantidad; i++) {
             pre[i] = new Preguntas(
                     pregunta[num[i]], resA[num[i]], resB[num[i]], resC[num[i]], resD[num[i]], sol[num[i]], expliSol[num[i]], imgPre[num[i]],
-                    imgA[num[i]], imgB[num[i]], imgC[num[i]], imgD[num[i]], imgSol[num[i]], imgExpli[num[i]], respulsada[num[i]]);
+                    imgA[num[i]], imgB[num[i]], imgC[num[i]], imgD[num[i]], imgSol[num[i]], imgExpli[num[i]], respulsada[num[i]],"");
         }
 
         final Button alante = (Button) findViewById(R.id.alante);
@@ -840,7 +840,7 @@ public class main_preguntasAleatorio extends Activity {
         limpiarelementos();
         avanza();
         //colocar++;
-        //recolocar();
+        recolocar();
         calcularestado();
         atras.setVisibility(View.INVISIBLE);
         alante.setOnClickListener(new View.OnClickListener() {
@@ -848,6 +848,8 @@ public class main_preguntasAleatorio extends Activity {
             public void onClick(View v) {
                 interstitial.show();
                 avanza();
+				colocar++;
+                recolocar();
             }
         });
 
@@ -868,6 +870,10 @@ public class main_preguntasAleatorio extends Activity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
                 }
+				colocar--;
+                if (colocar == -1) {
+                    colocar = 0;
+                }
                 recolocar();
             }
         });
@@ -879,7 +885,7 @@ public class main_preguntasAleatorio extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "a";
                 verificarRes(opt);
-                pos[cont.getCont()-1] = 1;
+                pos[colocar] = 1;
 
                 calcularestado();
                 if (memoria) {
@@ -908,7 +914,7 @@ public class main_preguntasAleatorio extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "b";
                 verificarRes(opt);
-                pos[cont.getCont()-1] = 2;
+                pos[colocar] = 2;
 
                 calcularestado();
                 if (memoria) {
@@ -935,7 +941,7 @@ public class main_preguntasAleatorio extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "c";
                 verificarRes(opt);
-                pos[cont.getCont()-1] = 3;
+                pos[colocar] = 3;
 
                 calcularestado();
                 if (memoria) {
@@ -962,7 +968,7 @@ public class main_preguntasAleatorio extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "d";
                 verificarRes(opt);
-                pos[cont.getCont()-1] = 4;
+                pos[colocar] = 4;
 
                 calcularestado();
                 if (memoria) {
@@ -1009,8 +1015,8 @@ public class main_preguntasAleatorio extends Activity {
         RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
         ScrollView contenedor = (ScrollView) findViewById(R.id.contenedor);
         ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
-        if (pos[cont.getCont()] != 0) {
-            switch (pos[cont.getCont()]) {
+        if (pos[colocar] != 0) {
+            switch (pos[colocar]) {
                 case 1:
                     if (respuestaA.getText().equals(solucion.getText())) {
                         a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
@@ -1043,7 +1049,7 @@ public class main_preguntasAleatorio extends Activity {
             b.setEnabled(false);
             c.setEnabled(false);
             d.setEnabled(false);
-            Msolucion.setVisibility(View.GONE);
+            Msolucion.setVisibility(View.VISIBLE);
             contenedor.setBackgroundColor(Color.parseColor("#E8F0F1"));
             prohibido.setVisibility(View.VISIBLE);
             prohibido.setImageResource(getResources().getIdentifier("drawable/" + "prohibido", null, getPackageName()));
@@ -1059,7 +1065,7 @@ public class main_preguntasAleatorio extends Activity {
     }
 
     private void verificarRes(String opt) {
-        Msolucion.setVisibility(View.GONE);
+        Msolucion.setVisibility(View.VISIBLE);
         switch (opt) {
             case "a":
 
@@ -1141,18 +1147,33 @@ public class main_preguntasAleatorio extends Activity {
     ///////////inicio de carga y boton avanzar////////
     //////////////////////////////////////////////////
     private void avanza() {
-        //ocultaralante();
+        ocultaralante();
         if (cont.getCont() < pregunta.length) {
-            limpiarelementos();
-            recolocar();
-            cont.setCont(cont.getCont() + 1);
-            if (arreglo == 2) {
+            
+			if (arreglo == 2) {
+            	cont.setCont(cont.getCont() + 1);
+
                 limpiarelementos();
-                recolocar();
-                cont.setCont(cont.getCont() + 1);
-            }
-            ocultaralante();
-            arreglo = 1;
+				
+				 if(cont.getCont() != 0) {
+                    viewflipper.setInAnimation(animrightalante);
+                    viewflipper.showPrevious();
+                }
+				cont.setCont(cont.getCont() + 1);
+				ocultaralante();
+                //recolocar();
+                
+            }else{
+				limpiarelementos();
+				if(cont.getCont() != 0) {
+                    viewflipper.setInAnimation(animrightalante);
+                    viewflipper.showPrevious();
+                }
+				cont.setCont(cont.getCont() + 1);
+                ocultaralante();
+			}
+            //ocultaralante();             
+			arreglo = 1;
             if (num[cont.getCont()-1] >= inmemo && num[cont.getCont()-1] < outmemo && pos[cont.getCont()-1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
@@ -1192,7 +1213,7 @@ public class main_preguntasAleatorio extends Activity {
     private void ocultaralante() {
         Button alante = (Button) findViewById(R.id.alante);
         Button atras = (Button) findViewById(R.id.atras);
-        if (cont.getCont() == 0) {
+        if (cont.getCont() == 1) {
             atras.setVisibility(View.INVISIBLE);
             alante.setVisibility(View.VISIBLE);
         } else {
@@ -1252,6 +1273,9 @@ public class main_preguntasAleatorio extends Activity {
         cuenta.setText(cont.getCont() + 1 + "");
 
 
+        if (cont.getCont() == -1) {
+            cont.setCont(0);
+        }
         if (pre[cont.getCont()].getImgPregunta().equals("")) {
             imgpregunta.setVisibility(View.GONE);
             imgpregunta.setImageResource(0);
@@ -1325,14 +1349,18 @@ public class main_preguntasAleatorio extends Activity {
 
         if (pre[cont.getCont()].getRespuestaA().equals("")) {
             respuestaA.setVisibility(View.GONE);
+			a.setVisibility(View.GONE);
         } else {
+			a.setVisibility(View.VISIBLE);
             respuestaA.setVisibility(View.VISIBLE);
             respuestaA.setText(pre[cont.getCont()].getRespuestaA());
         }
 
         if (pre[cont.getCont()].getRespuestaB().equals("")) {
             respuestaB.setVisibility(View.GONE);
+			b.setVisibility(View.GONE);
         } else {
+			b.setVisibility(View.VISIBLE);
             respuestaB.setVisibility(View.VISIBLE);
             respuestaB.setText(pre[cont.getCont()].getRespuestaB());
         }
@@ -1358,7 +1386,7 @@ public class main_preguntasAleatorio extends Activity {
         if (pre[cont.getCont()].getSolu().equals("")) {
             solucion.setVisibility(View.GONE);
         } else {
-            solucion.setVisibility(View.GONE);
+            solucion.setVisibility(View.VISIBLE);
             solucion.setText(pre[cont.getCont()].getSolu());
         }
 
@@ -1371,10 +1399,6 @@ public class main_preguntasAleatorio extends Activity {
             public void run() {
                 TextView pregunta = (TextView) findViewById(R.id.pregunta);
                 ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-                /*a.setVisibility(View.VISIBLE);
-                b.setVisibility(View.VISIBLE);
-                c.setVisibility(View.VISIBLE);
-                d.setVisibility(View.VISIBLE);*/
                 if (pre[cont.getCont()-1].getRespuestaA().equals("")) {
                     a.setVisibility(View.GONE);
                 } else {
