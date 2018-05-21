@@ -423,7 +423,18 @@ public class main_examen_academia extends Activity {
             @Override
             public void onClick(View v) {
                 interstitial.show();
-                if (bloque == 7 && posi == 14) {
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    main_preguntas_academia.limpiaImgUrl();
+                    if (bloque == 7 && posi == 14) {
+
+                        main_preguntas_academia.bpre = true;
+                        main_preguntas_academia.ba = true;
+                        main_preguntas_academia.bb = true;
+                        main_preguntas_academia.bc = true;
+                        main_preguntas_academia.bd = true;
+                        main_preguntas_academia.bsol = true;
+                        main_preguntas_academia.bexpl = true;
                     if (arregloacabar == false) {
                         Cronometro.pause();
                         siguiente.setEnabled(false);
@@ -482,6 +493,13 @@ public class main_examen_academia extends Activity {
                                         posi--;
                                         Cronometro.pause();
                                         siguiente.setEnabled(true);
+                                            main_preguntas_academia.bpre = true;
+                                            main_preguntas_academia.ba = true;
+                                            main_preguntas_academia.bb = true;
+                                            main_preguntas_academia.bc = true;
+                                            main_preguntas_academia.bd = true;
+                                            main_preguntas_academia.bsol = true;
+                                            main_preguntas_academia.bexpl = true;
                                     }
                                 })
                                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -515,17 +533,44 @@ public class main_examen_academia extends Activity {
                         }
                         if (posi > 14) {
                             posi = 0;
+                            }else{
+                                main_preguntas_academia.bpre = true;
+                                main_preguntas_academia.ba = true;
+                                main_preguntas_academia.bb = true;
+                                main_preguntas_academia.bc = true;
+                                main_preguntas_academia.bd = true;
+                                main_preguntas_academia.bsol = true;
+                                main_preguntas_academia.bexpl = true;
                         }
                         imprimir(bloque, posi);
                         cuentabloque.setText(bloque + "/7");
                         contador.setText((posi + 1) + "/15");
 						viewflipper.setInAnimation(animrightalante);
                         viewflipper.showPrevious();
+                        }else{
+                            main_preguntas_academia.bpre = true;
+                            main_preguntas_academia.ba = true;
+                            main_preguntas_academia.bb = true;
+                            main_preguntas_academia.bc = true;
+                            main_preguntas_academia.bd = true;
+                            main_preguntas_academia.bsol = true;
+                            main_preguntas_academia.bexpl = true;
                     }
 
                 }
                 recolocar();
                 memoria();
+                    if(acabar == true && bloque ==6){
+
+                        main_preguntas_academia.bpre = true;
+                        main_preguntas_academia.ba = true;
+                        main_preguntas_academia.bb = true;
+                        main_preguntas_academia.bc = true;
+                        main_preguntas_academia.bd = true;
+                        main_preguntas_academia.bsol = true;
+                        main_preguntas_academia.bexpl = true;
+                    }
+                }
             }
         });
 
@@ -533,7 +578,9 @@ public class main_examen_academia extends Activity {
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    main_preguntas_academia.limpiaImgUrl();
                 if (posi < 15 && posi >= 0) {
                     if (posi == 0 && acabar == true) {
                         if (bloque > 1) {
@@ -544,6 +591,14 @@ public class main_examen_academia extends Activity {
                             recolocar();
                             cuentabloque.setText(bloque + "/7");
                         }
+                        } else if(posi == 0 && acabar == false){
+                            main_preguntas_academia.bpre = true;
+                            main_preguntas_academia.ba = true;
+                            main_preguntas_academia.bb = true;
+                            main_preguntas_academia.bc = true;
+                            main_preguntas_academia.bd = true;
+                            main_preguntas_academia.bsol = true;
+                            main_preguntas_academia.bexpl = true;
                     } else if (posi > 0) {
                         posi--;
                         imprimir(bloque, posi);
@@ -551,6 +606,17 @@ public class main_examen_academia extends Activity {
                         recolocar();
                         viewflipper.setInAnimation(animrightatras);
                         viewflipper.showPrevious();
+                    }
+                }
+                    if(acabar == true && bloque ==6){
+
+                        main_preguntas_academia.bpre = true;
+                        main_preguntas_academia.ba = true;
+                        main_preguntas_academia.bb = true;
+                        main_preguntas_academia.bc = true;
+                        main_preguntas_academia.bd = true;
+                        main_preguntas_academia.bsol = true;
+                        main_preguntas_academia.bexpl = true;
                     }
                 }
             }
@@ -1464,7 +1530,8 @@ public class main_examen_academia extends Activity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
                 String opt = "a";
                 verificarRes(opt);
                 switch (bloque) {
@@ -1495,13 +1562,15 @@ public class main_examen_academia extends Activity {
                     Button atras = (Button) findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
-
+				}
             }
         });
         b = (RelativeLayout) findViewById(R.id.b);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
                 String opt = "b";
                 verificarRes(opt);
                 switch (bloque) {
@@ -1532,13 +1601,15 @@ public class main_examen_academia extends Activity {
                     Button atras = (Button) findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
-
+}
             }
         });
         c = (RelativeLayout) findViewById(R.id.c);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
                 String opt = "c";
                 verificarRes(opt);
                 switch (bloque) {
@@ -1569,13 +1640,15 @@ public class main_examen_academia extends Activity {
                     Button atras = (Button) findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
-
+}
             }
         });
         d = (RelativeLayout) findViewById(R.id.d);
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
                 String opt = "d";
                 verificarRes(opt);
                 switch (bloque) {
@@ -1605,6 +1678,7 @@ public class main_examen_academia extends Activity {
                 if (bloque != 6) {
                     Button atras = (Button) findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
+}
                 }
             }
         });
@@ -2319,6 +2393,13 @@ public class main_examen_academia extends Activity {
             alante.setVisibility(View.INVISIBLE);
             pasusaexamen = false;
             esperarYCerrar(memoria);
+            main_preguntas_academia.bpre = true;
+            main_preguntas_academia.ba = true;
+            main_preguntas_academia.bb = true;
+            main_preguntas_academia.bc = true;
+            main_preguntas_academia.bd = true;
+            main_preguntas_academia.bsol = true;
+            main_preguntas_academia.bexpl = true;
         }
         if (bloque != 6) {
             Button atras = (Button) findViewById(R.id.atras);
@@ -2330,9 +2411,14 @@ public class main_examen_academia extends Activity {
 
     private void acabar() {
         siguiente.setEnabled(true);
-        if (acabar == false) {
-            //th = null;
-        }
+            main_preguntas_academia.bpre = true;
+            main_preguntas_academia.ba = true;
+            main_preguntas_academia.bb = true;
+            main_preguntas_academia.bc = true;
+            main_preguntas_academia.bd = true;
+            main_preguntas_academia.bsol = true;
+            main_preguntas_academia.bexpl = true;
+
         acabar = true;
         arregloacabar = true;
         a.setEnabled(false);
@@ -2412,6 +2498,13 @@ public class main_examen_academia extends Activity {
                             memoria();
                             cuentatras.setText("00:07:00");
                         }
+            main_preguntas_academia.bpre = true;
+            main_preguntas_academia.ba = true;
+            main_preguntas_academia.bb = true;
+            main_preguntas_academia.bc = true;
+            main_preguntas_academia.bd = true;
+            main_preguntas_academia.bsol = true;
+            main_preguntas_academia.bexpl = true;
                         }
                     }).create().show();
 

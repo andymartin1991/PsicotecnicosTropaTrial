@@ -111,11 +111,11 @@ public class main_examen extends Activity {
         RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
-        int mes = cc1.get(Calendar.MONTH)+1;
-        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+        int mes = cc1.get(Calendar.MONTH) + 1;
+        if ((mes == 11 || mes == 12) || (mes == 1 && dia <= 7)) {
             padre.setBackgroundResource(R.color.rojonavidad);
             subcontenedor.setBackgroundResource(R.color.rojonavidad);
-        }else{
+        } else {
 
         }
 
@@ -125,7 +125,7 @@ public class main_examen extends Activity {
         guardado = false;
         bloque = 1;
         posi = 0;
-        memoria = 1000;//10000
+        memoria = 10000;//10000
         arregloacabar = false;
 
 
@@ -141,7 +141,7 @@ public class main_examen extends Activity {
         adView.setAdSize(AdSize.BANNER);
         // Buscar LinearLayout suponiendo que se le ha asignado
         // el atributo android:id="@+id/mainLayout".
-        LinearLayout layout = (LinearLayout)findViewById(R.id.lytMain);
+        LinearLayout layout = (LinearLayout) findViewById(R.id.lytMain);
         // Añadirle adView.
         layout.addView(adView);
         // Cargar adView con la solicitud de anuncio.
@@ -170,8 +170,8 @@ public class main_examen extends Activity {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
 
-        ver = (Button)findViewById(R.id.ver);
-        finish = (Button)findViewById(R.id.finish);
+        ver = (Button) findViewById(R.id.ver);
+        finish = (Button) findViewById(R.id.finish);
 
         ver.setOnClickListener(new View.OnClickListener() {
                                    @Override
@@ -222,7 +222,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueverbal[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         int h = 0, cantidad = 16, rango = pregunta.length;
         nverb = new int[cantidad];
@@ -260,7 +260,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquenumerico[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         h = 0;
         cantidad = 16;
@@ -300,7 +300,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueespacial[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         h = 0;
         cantidad = 16;
@@ -340,7 +340,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquemecanico[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         h = 0;
         cantidad = 16;
@@ -380,7 +380,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueperceptiva[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         h = 0;
         cantidad = 16;
@@ -420,7 +420,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquememoria[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         h = 0;
         cantidad = 16;
@@ -460,7 +460,7 @@ public class main_examen extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueabstrapto[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i], "");
         }
         h = 0;
         cantidad = 16;
@@ -1670,18 +1670,18 @@ public class main_examen extends Activity {
             case "a":
 
                 if (respuestaA.getText().equals(solucion.getText())) {
-                    if(acabar==true){
+                    if (acabar == true) {
                         a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                    }else{
+                    } else {
                         a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                 } else {
-                    if(acabar==true){
+                    if (acabar == true) {
                         a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                    }else{
+                    } else {
                         a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -1693,18 +1693,18 @@ public class main_examen extends Activity {
             case "b":
 
                 if (respuestaB.getText().equals(solucion.getText())) {
-                    if(acabar==true){
+                    if (acabar == true) {
                         b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                    }else{
+                    } else {
                         b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                 } else {
-                    if(acabar==true){
+                    if (acabar == true) {
                         b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                    }else{
+                    } else {
                         b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -1716,18 +1716,18 @@ public class main_examen extends Activity {
             case "c":
 
                 if (respuestaC.getText().equals(solucion.getText())) {
-                    if(acabar==true){
+                    if (acabar == true) {
                         c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                    }else{
+                    } else {
                         c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                 } else {
-                    if(acabar==true){
+                    if (acabar == true) {
                         c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                    }else{
+                    } else {
                         c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -1739,18 +1739,18 @@ public class main_examen extends Activity {
             case "d":
 
                 if (respuestaD.getText().equals(solucion.getText())) {
-                    if(acabar==true){
+                    if (acabar == true) {
                         d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                    }else{
+                    } else {
                         d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                 } else {
-                    if(acabar==true){
+                    if (acabar == true) {
                         d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                    }else{
+                    } else {
                         d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                     }
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -1777,60 +1777,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloqueverbal().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -1842,60 +1842,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloquenumerico().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
- 								}
+                                }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -1907,60 +1907,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloqueespacial().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -1972,60 +1972,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloquemecanico().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -2037,60 +2037,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloqueperceptiva().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -2102,60 +2102,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloquememoria().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -2167,60 +2167,60 @@ public class main_examen extends Activity {
                     switch (notas.getBloqueabstrapto().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 2:
                             if (respuestaB.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 3:
                             if (respuestaC.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
                             break;
                         case 4:
                             if (respuestaD.getText().equals(solucion.getText())) {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             } else {
-                                if(acabar == true){
+                                if (acabar == true) {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                                }else{
+                                } else {
                                     d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                                 }
                             }
@@ -2231,7 +2231,7 @@ public class main_examen extends Activity {
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if(pasusaexamen == true){
+            if (pasusaexamen == true) {
                 if (acabar == false) {
                     Cronometro.pause();
                     new AlertDialog.Builder(this)
@@ -2275,7 +2275,7 @@ public class main_examen extends Activity {
                                 }
                             }).show();
                 }
-            } else{
+            } else {
 
                 Toast toast1 =
                         Toast.makeText(getApplicationContext(),
@@ -2420,7 +2420,7 @@ public class main_examen extends Activity {
             public void run() {
                 try {
                     boolean kk = true;
-                    while(kk == true) {
+                    while (kk == true) {
                         sleep(10);
                         if (acabatiempo == true) {
                             handler.post(seacabo);
@@ -2455,44 +2455,44 @@ public class main_examen extends Activity {
                         @SuppressWarnings("deprecation")
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                        posi = 0;
-                        bloque++;
-                        if (bloque == 8) {
-                            acabar();
-                            Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
-                            startActivity(resultado);
-                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                        } else {
-                            interstitial.loadAd(adRequest);
-                            imprimir(bloque, posi);
-                            contador.setText((posi + 1) + "/15");
-                            cuentabloque.setText(bloque + "/7");
-                            Cronometro.reiniciar();
-                            limpiarselect();
-                            seacabotiempo();
-                            memoria();
-                            cuentatras.setText("00:07:00");
-                        }
+                            posi = 0;
+                            bloque++;
+                            if (bloque == 8) {
+                                acabar();
+                                Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
+                                startActivity(resultado);
+                                overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                            } else {
+                                interstitial.loadAd(adRequest);
+                                imprimir(bloque, posi);
+                                contador.setText((posi + 1) + "/15");
+                                cuentabloque.setText(bloque + "/7");
+                                Cronometro.reiniciar();
+                                limpiarselect();
+                                seacabotiempo();
+                                memoria();
+                                cuentatras.setText("00:07:00");
+                            }
                         }
                     }).create().show();
 
         }
     };
 
-    private void veropt(){
+    private void veropt() {
         final LayoutInflater inflater = this.getLayoutInflater();
         final View textEntryView = inflater.inflate(R.layout.seleccionbloque, null);
-        final Button verbal = (Button)textEntryView.findViewById(R.id.verbal);
-        final Button numerico = (Button)textEntryView.findViewById(R.id.numerico);
-        final Button espacial = (Button)textEntryView.findViewById(R.id.espacial);
-        final Button abstracto = (Button)textEntryView.findViewById(R.id.abstracto);
-        final Button percectiva = (Button)textEntryView.findViewById(R.id.perceptiva);
-        final Button memoria = (Button)textEntryView.findViewById(R.id.memoria);
-        final Button  mecanico = (Button)textEntryView.findViewById(R.id.mecanico);
+        final Button verbal = (Button) textEntryView.findViewById(R.id.verbal);
+        final Button numerico = (Button) textEntryView.findViewById(R.id.numerico);
+        final Button espacial = (Button) textEntryView.findViewById(R.id.espacial);
+        final Button abstracto = (Button) textEntryView.findViewById(R.id.abstracto);
+        final Button percectiva = (Button) textEntryView.findViewById(R.id.perceptiva);
+        final Button memoria = (Button) textEntryView.findViewById(R.id.memoria);
+        final Button mecanico = (Button) textEntryView.findViewById(R.id.mecanico);
         final AlertDialog.Builder builder2 = new AlertDialog.Builder(this);
         builder2.setView(textEntryView);
         builder2.setIcon(getResources().getDrawable(R.drawable.iexc));
-        builder2.setTitle(getString(R.string.atencion)+", seleccione un bloque");
+        builder2.setTitle(getString(R.string.atencion) + ", seleccione un bloque");
         builder2.setCancelable(false);
         builder2.setPositiveButton("Ir", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
@@ -2512,7 +2512,6 @@ public class main_examen extends Activity {
         percectiva.setPressed(true);
         memoria.setPressed(true);
         mecanico.setPressed(true);
-
 
 
         verbal.setOnClickListener(new View.OnClickListener() {
