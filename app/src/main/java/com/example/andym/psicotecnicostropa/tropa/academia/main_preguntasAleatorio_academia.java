@@ -219,14 +219,14 @@ public class main_preguntasAleatorio_academia extends Activity {
                 if (main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
                         main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl) {
                     main_preguntas_academia.limpiaImgUrl();
-                    limpiarelementos();
+                    //limpiarelementos();
 	                ocultaratras();
 	                if (cont.getCont() > 0) {
 	                    cont.setCont(cont.getCont() - 1);
 	                    if (arreglo == 1) {
 	                        cont.setCont(cont.getCont() - 1);
 	                    }
-	                    limpiarelementos();
+	                    //limpiarelementos();
 	                    ocultaratras();
 	                    arreglo = 2;
 	                    viewflipper.setInAnimation(animrightatras);
@@ -234,6 +234,7 @@ public class main_preguntasAleatorio_academia extends Activity {
 	                } else {
 	                    Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
 	                }
+                    limpiarelementos();
 					colocar--;
 	                if (colocar == -1) {
 	                    colocar = 0;
@@ -550,7 +551,7 @@ public class main_preguntasAleatorio_academia extends Activity {
 			}
             //ocultaralante();             
 			arreglo = 1;
-            if (pre[cont.getCont()-1].getMemo().equals("si") && pos[cont.getCont()-1] == 0) {
+            if (pre[cont.getCont()-1].getTipo().equals("si") && pos[cont.getCont()-1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                 RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
