@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -13,14 +14,19 @@ import android.widget.TextView;
 
 import com.example.andym.psicotecnicostropa.tropa.main_principal;
 
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
+import static com.example.andym.psicotecnicostropa.tropa.academia.main_estudio_academia_sub.readStream;
 
 
 public class main_splash extends Activity {
 
-    //String version = "5.1.4";
     String version = String.valueOf((BuildConfig.VERSION_NAME));
+    TextView textoServi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,27 @@ public class main_splash extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.main_splash);
+
+        textoServi = (TextView)findViewById(R.id.textoServi);
+        try {
+
+            Thread leerarchivo = new Thread() {
+                public void run() {
+                    try {
+                        String contents;
+                        URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/textoServiTrial.html").openConnection();
+                        InputStream in = conn.getInputStream();
+                        contents = readStream(in);
+                        textoServi.setText(Html.fromHtml(contents));
+                    } catch (Exception e) {
+
+                    }
+                }
+            };
+            leerarchivo.start();
+        } catch (Exception e) {
+
+        }
 
         TextView mensaje = (TextView)findViewById(R.id.mensaje);
 
@@ -70,7 +97,7 @@ public class main_splash extends Activity {
                 new Thread(new Runnable() {
                     public void run() {
                         try {
-                            Thread.sleep(2000);
+                            Thread.sleep(5000);
                         } catch (InterruptedException e) {
                         }
                         startActivity(new Intent(main_splash.this, main_principal.class));

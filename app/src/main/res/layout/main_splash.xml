@@ -37,4 +37,14 @@
         android:textColor="@color/BLANCO"
         android:textSize="30sp" />
 
+    <TextView
+        android:id="@+id/textoServi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
 </RelativeLayout>

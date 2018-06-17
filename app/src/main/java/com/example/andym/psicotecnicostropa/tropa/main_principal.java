@@ -18,9 +18,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TableRow;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.R;
@@ -35,6 +37,7 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -58,6 +61,8 @@ public class main_principal extends Activity {
     String Correo="";
     String Password="";
     String Academia="";
+    boolean recordar = false;
+    int beta = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -786,6 +791,12 @@ public class main_principal extends Activity {
         votar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                beta++;
+                if(beta == 10){
+                    TableRow temp= (TableRow)findViewById(R.id.betaaca);
+                    temp.setVisibility(View.VISIBLE);
+
+                }
                 if (entra[0] == true) {
                     entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
@@ -942,6 +953,53 @@ public class main_principal extends Activity {
         final EditText password = (EditText) textEntryView.findViewById(R.id.password);
         final EditText search = (EditText) textEntryView.findViewById(R.id.search);
         final ListView academias = (ListView) textEntryView.findViewById(R.id.academias);
+        final CheckBox checRecord = (CheckBox)textEntryView.findViewById(R.id.recordar);
+        checRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isChecked = ((CheckBox)v).isChecked();
+                if (isChecked) {
+                    recordar = true;
+                }
+                else {
+                    recordar = false;
+                }
+            }
+        });
+
+        ///////////////////////////////////poner datos si existe guardado login
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
+        final File a = new File(ruta_sd.getAbsolutePath(), "login");
+        if(a.exists()) {
+            String fichero = "login";
+            try {
+                BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(a)));
+                String linea[] = {"","",""};
+                int i = 0;
+                String line;
+                while((line = br.readLine()) != null) {
+                    linea[i]=line;
+                    i++;
+                }
+                br.close();
+                correo.setText(linea[0]);
+                password.setText(linea[1]);
+                search.setText(linea[2]);
+                checRecord.setChecked(true);
+            }
+            catch(Exception e) {
+                System.out.println("Excepcion leyendo fichero "+ fichero + ": " + e);
+            }
+        }
+        ///////////////////////////fin de poner datos si existe guardado login
 
         peticion();
 
@@ -996,9 +1054,9 @@ public class main_principal extends Activity {
         builder2.setCancelable(false);
         builder2.setPositiveButton("ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-                correo.setText("andymartin1991@gmail.com");
+                /*correo.setText("andymartin1991@gmail.com");
                 password.setText("permiso1991");
-                search.setText("PsicotecnicosTropa");
+                search.setText("PsicotecnicosTropa");*/
 
                 if(correo.getText().toString() != null && !correo.getText().toString().equals("")){
                    Correo = correo.getText().toString();
@@ -1017,6 +1075,49 @@ public class main_principal extends Activity {
                     mensaje.show();
                     dialogrepetir();
                 }else{
+                    if(recordar){
+                        try {
+                            String state = Environment.getExternalStorageState();
+
+                            File ruta_sd;
+                            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                                // We can read and write the media
+                                ruta_sd = getExternalFilesDir(null);
+                            } else {
+                                // Load another directory, probably local memory
+                                ruta_sd = getFilesDir();
+                            }
+                            //File ruta_sd = getExternalFilesDir(null);
+                            File f = new File(ruta_sd.getAbsolutePath(), "login");
+                            OutputStreamWriter fout =
+                                    new OutputStreamWriter(
+                                            new FileOutputStream(f));
+                            String aux = Correo+"\n"+Password+"\n"+Academia;
+                            fout.write(aux);
+                            fout.close();
+                            System.out.println(ruta_sd);
+                            System.out.println(f);
+                        } catch (Exception ex) {
+                            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+                            Toast mensaje = Toast.makeText(getApplicationContext(),
+                                    "Error al guardar login", Toast.LENGTH_SHORT);
+                            mensaje.show();
+                        }
+                    }else{
+                        File ruta_sd;
+                        String state = Environment.getExternalStorageState();
+                        if (Environment.MEDIA_MOUNTED.equals(state)) {
+                            // We can read and write the media
+                            ruta_sd = getExternalFilesDir(null);
+                        } else {
+                            // Load another directory, probably local memory
+                            ruta_sd = getFilesDir();
+                        }
+                        final File a = new File(ruta_sd.getAbsolutePath(), "login");
+                        if(a.exists()) {
+                            a.delete();
+                        }
+                    }
                     Toast mensaje = Toast.makeText(getApplicationContext(),
                             "Enviando...", Toast.LENGTH_SHORT);
                     mensaje.show();
@@ -1030,6 +1131,9 @@ public class main_principal extends Activity {
                     Intent i = new Intent(main_principal.this, main_academia.class);
                     i.putExtras(parmetros);
                     startActivity(i);
+                    LayoutInflater inflater = main_principal.this.getLayoutInflater();
+                    View textEntryView = inflater.inflate(R.layout.loggin, null);
+                    CheckBox recordar = (CheckBox) textEntryView.findViewById(R.id.recordar);
                 }
             }
         });
