@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.tropa.main_principal;
 
@@ -36,25 +37,6 @@ public class main_splash extends Activity {
         setContentView(R.layout.main_splash);
 
         textoServi = (TextView)findViewById(R.id.textoServi);
-        try {
-
-            Thread leerarchivo = new Thread() {
-                public void run() {
-                    try {
-                        String contents;
-                        URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/textoServiTrial.html").openConnection();
-                        InputStream in = conn.getInputStream();
-                        contents = readStream(in);
-                        textoServi.setText(Html.fromHtml(contents));
-                    } catch (Exception e) {
-
-                    }
-                }
-            };
-            leerarchivo.start();
-        } catch (Exception e) {
-
-        }
 
         TextView mensaje = (TextView)findViewById(R.id.mensaje);
 
@@ -75,6 +57,33 @@ public class main_splash extends Activity {
         }
 
         mostrar();
+        try {
+
+            Thread leerarchivo = new Thread() {
+                public void run() {
+                    try {
+                        String contents;
+                        URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/textoServiTrial.html").openConnection();
+                        InputStream in = conn.getInputStream();
+                        contents = readStream(in);
+                        textoServi.setText(Html.fromHtml(contents));
+
+                    } catch (Exception e) {
+
+                    }
+                    /*try {
+                        Thread.sleep(3000);
+                        startActivity(new Intent(main_splash.this, main_principal.class));
+                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                        finish();
+                    } catch (InterruptedException e) {
+                    }*/
+                }
+            };
+            leerarchivo.start();
+        } catch (Exception e) {
+
+        }
     }
 
     private void mostrar() {
@@ -97,7 +106,7 @@ public class main_splash extends Activity {
                 new Thread(new Runnable() {
                     public void run() {
                         try {
-                            Thread.sleep(5000);
+                            Thread.sleep(3000);
                         } catch (InterruptedException e) {
                         }
                         startActivity(new Intent(main_splash.this, main_principal.class));

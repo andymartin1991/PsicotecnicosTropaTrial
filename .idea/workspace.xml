@@ -12,10 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34eb36d5-13e5-40f6-9130-c0b19af3f9f4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi-v11/boton_menu_exiopo.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi-v11/boton_menu_exiopo_end.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi-v11/boton_menu_exiopo_start.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -24,8 +29,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" afterPath="$PROJECT_DIR$/app/release/app-release.apk" />
+      <change beforePath="$PROJECT_DIR$/app/release/output.json" afterPath="$PROJECT_DIR$/app/release/output.json" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_principal.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -88,7 +112,7 @@
       <file leaf-file-name="main_examen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="714">
               <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
               <folding />
             </state>
@@ -111,21 +135,41 @@
       <file leaf-file-name="main_splash.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="454">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding>
+                <element signature="e#2053#2973#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#3128#3160#0" expanded="true" />
+                <element signature="e#3312#3340#0" expanded="true" />
+                <element signature="e#3374#3406#0" expanded="true" />
+                <element signature="e#3561#4204#0" expanded="true" />
+                <element signature="e#3698#4170#0" expanded="true" />
+                <element signature="e#4169#4170#0" expanded="true" />
+                <element signature="e#4203#4204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="233" column="108" lean-forward="false" selection-start-line="233" selection-start-column="108" selection-end-line="233" selection-end-column="108" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_principal.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_principal.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_principal.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="673" column="65" lean-forward="false" selection-start-line="673" selection-start-column="65" selection-end-line="673" selection-end-column="65" />
+            <state relative-caret-position="141">
+              <caret line="650" column="47" lean-forward="false" selection-start-line="650" selection-start-column="47" selection-end-line="650" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -161,9 +205,115 @@
       <file leaf-file-name="main_principal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18513">
-              <caret line="1141" column="0" lean-forward="false" selection-start-line="1141" selection-start-column="0" selection-end-line="1141" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="124" column="58" lean-forward="false" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+              <folding>
+                <element signature="e#4408#5226#0" expanded="true" />
+                <element signature="e#4528#5192#0" expanded="true" />
+                <element signature="e#5191#5192#0" expanded="true" />
+                <element signature="e#5225#5226#0" expanded="true" />
+                <element signature="e#5305#6274#0" expanded="true" />
+                <element signature="e#5702#6221#0" expanded="true" />
+                <element signature="e#6220#6221#0" expanded="true" />
+                <element signature="e#6273#6274#0" expanded="true" />
+                <element signature="e#6315#11889#0" expanded="true" />
+                <element signature="e#11194#11717#0" expanded="true" />
+                <element signature="e#11716#11717#0" expanded="true" />
+                <element signature="e#11888#11889#0" expanded="true" />
+                <element signature="e#11927#12893#0" expanded="true" />
+                <element signature="e#12323#12841#0" expanded="true" />
+                <element signature="e#12840#12841#0" expanded="true" />
+                <element signature="e#12892#12893#0" expanded="true" />
+                <element signature="e#12933#13903#0" expanded="true" />
+                <element signature="e#13331#13851#0" expanded="true" />
+                <element signature="e#13850#13851#0" expanded="true" />
+                <element signature="e#13902#13903#0" expanded="true" />
+                <element signature="e#13941#19490#0" expanded="true" />
+                <element signature="e#18807#19318#0" expanded="true" />
+                <element signature="e#19317#19318#0" expanded="true" />
+                <element signature="e#19489#19490#0" expanded="true" />
+                <element signature="e#19528#25084#0" expanded="true" />
+                <element signature="e#24394#24912#0" expanded="true" />
+                <element signature="e#24911#24912#0" expanded="true" />
+                <element signature="e#25083#25084#0" expanded="true" />
+                <element signature="e#25120#26261#0" expanded="true" />
+                <element signature="e#25514#26209#0" expanded="true" />
+                <element signature="e#26208#26209#0" expanded="true" />
+                <element signature="e#26260#26261#0" expanded="true" />
+                <element signature="e#26301#27461#0" expanded="true" />
+                <element signature="e#26699#27409#0" expanded="true" />
+                <element signature="e#27408#27409#0" expanded="true" />
+                <element signature="e#27460#27461#0" expanded="true" />
+                <element signature="e#27499#28644#0" expanded="true" />
+                <element signature="e#27895#28592#0" expanded="true" />
+                <element signature="e#28591#28592#0" expanded="true" />
+                <element signature="e#28643#28644#0" expanded="true" />
+                <element signature="e#28685#29843#0" expanded="true" />
+                <element signature="e#29084#29791#0" expanded="true" />
+                <element signature="e#29790#29791#0" expanded="true" />
+                <element signature="e#29842#29843#0" expanded="true" />
+                <element signature="e#29886#30855#0" expanded="true" />
+                <element signature="e#30287#30803#0" expanded="true" />
+                <element signature="e#30802#30803#0" expanded="true" />
+                <element signature="e#30854#30855#0" expanded="true" />
+                <element signature="e#30896#31868#0" expanded="true" />
+                <element signature="e#31295#31816#0" expanded="true" />
+                <element signature="e#31815#31816#0" expanded="true" />
+                <element signature="e#31867#31868#0" expanded="true" />
+                <element signature="e#31908#32883#0" expanded="true" />
+                <element signature="e#32306#32831#0" expanded="true" />
+                <element signature="e#32830#32831#0" expanded="true" />
+                <element signature="e#32882#32883#0" expanded="true" />
+                <element signature="e#32920#33727#0" expanded="true" />
+                <element signature="e#33344#33675#0" expanded="true" />
+                <element signature="e#33674#33675#0" expanded="true" />
+                <element signature="e#33726#33727#0" expanded="true" />
+                <element signature="e#33771#34743#0" expanded="true" />
+                <element signature="e#34173#34691#0" expanded="true" />
+                <element signature="e#34690#34691#0" expanded="true" />
+                <element signature="e#34742#34743#0" expanded="true" />
+                <element signature="e#34784#36179#0" expanded="true" />
+                <element signature="e#35183#36127#0" expanded="true" />
+                <element signature="e#35649#35677#0" expanded="true" />
+                <element signature="e#36000#36031#0" expanded="true" />
+                <element signature="e#36126#36127#0" expanded="true" />
+                <element signature="e#36178#36179#0" expanded="true" />
+                <element signature="e#36216#37609#0" expanded="true" />
+                <element signature="e#36813#37557#0" expanded="true" />
+                <element signature="e#37556#37557#0" expanded="true" />
+                <element signature="e#37608#37609#0" expanded="true" />
+                <element signature="e#37648#38796#0" expanded="true" />
+                <element signature="e#38045#38744#0" expanded="true" />
+                <element signature="e#38743#38744#0" expanded="true" />
+                <element signature="e#38795#38796#0" expanded="true" />
+                <element signature="e#39002#39030#0" expanded="true" />
+                <element signature="e#39060#39092#0" expanded="true" />
+                <element signature="e#39223#39661#0" expanded="true" />
+                <element signature="e#39291#39323#0" expanded="true" />
+                <element signature="e#39660#39661#0" expanded="true" />
+                <element signature="e#39716#39851#0" expanded="true" />
+                <element signature="e#39850#39851#0" expanded="true" />
+                <element signature="e#39889#40902#0" expanded="true" />
+                <element signature="e#40346#40850#0" expanded="true" />
+                <element signature="e#40849#40850#0" expanded="true" />
+                <element signature="e#40901#40902#0" expanded="true" />
+                <element signature="e#41709#42790#0" expanded="true" />
+                <element signature="e#42789#42790#0" expanded="true" />
+                <element signature="e#43472#43818#0" expanded="true" />
+                <element signature="e#43817#43818#0" expanded="true" />
+                <element signature="e#45267#45275#0" expanded="true" />
+                <element signature="e#46822#47112#0" expanded="true" />
+                <element signature="e#47111#47112#0" expanded="true" />
+                <element signature="e#47338#47366#0" expanded="true" />
+                <element signature="e#47449#51938#0" expanded="true" />
+                <element signature="e#51937#51938#0" expanded="true" />
+                <element signature="e#52211#52239#0" expanded="true" />
+                <element signature="e#52270#52295#0" expanded="true" />
+                <element signature="e#52372#52399#0" expanded="true" />
+                <element signature="e#52418#52974#0" expanded="true" />
+                <element signature="e#52973#52974#0" expanded="true" />
+                <element signature="e#53012#53039#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2239,10 +2389,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_preguntas.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_splash.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/loggin.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_principal.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -2256,7 +2407,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -2270,6 +2421,106 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="psicotecnicostropa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="psicotecnicostropa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="tropa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="android" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="android" type="1f31426a:PackageElementNode" />
+              <item name="app" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="android" type="1f31426a:PackageElementNode" />
+              <item name="support" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="android" type="1f31426a:PackageElementNode" />
+              <item name="support" type="1f31426a:PackageElementNode" />
+              <item name="v7" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="google.android.gms" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="naroh.tropaPsicotecnicoTrial.test" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2379,112 +2630,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="psicotecnicostropa" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="psicotecnicostropa" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="tropa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="android" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="android" type="1f31426a:PackageElementNode" />
-              <item name="app" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="android" type="1f31426a:PackageElementNode" />
-              <item name="support" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="android" type="1f31426a:PackageElementNode" />
-              <item name="support" type="1f31426a:PackageElementNode" />
-              <item name="v7" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-              <item name="google.android.gms" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="PsicotecnicosTropaTrial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-              <item name="naroh.tropaPsicotecnicoTrial.test" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="device.picker.selection" value="Pixel_2_XL_API_26" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../keyapp/keyapp" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529355433353" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529469630657" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ExportApk.ApkPath" value="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app" />
@@ -2495,17 +2646,18 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi-v11" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\drawable" />
+      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\drawable-xxhdpi-v11" />
+      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\drawable-hdpi-v11" />
+      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\layout" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.andym.psicotecnicostropa.tropa.academia" />
       <recent name="com.example.andym.psicotecnicostropa.tropa.dtoTropa" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\drawable-xxhdpi-v11" />
-      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\drawable-hdpi-v11" />
-      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\layout" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andym\Dropbox\AndroidStudioProjects\PsicotecnicosTropaTrial\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2700,6 +2852,18 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="PsicotecnicosTropaTrial" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -2807,18 +2971,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="PsicotecnicosTropaTrial" />
-      <envs />
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -2853,6 +3005,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.63875306" order="6" side_tool="false" content_ui="tabs" />
@@ -2990,13 +3143,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-26/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2814" column="0" lean-forward="false" selection-start-line="2814" selection-start-column="0" selection-end-line="2814" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/dto/menu_optTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3152,7 +3298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4080">
           <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3189,7 +3334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3253,7 +3397,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_examen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="714">
           <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
           <folding />
         </state>
@@ -3270,14 +3414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/loggin.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3285,7 +3421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="47" lean-forward="false" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3296,7 +3431,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="160" column="20" lean-forward="false" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3304,14 +3438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11968">
           <caret line="746" column="9" lean-forward="false" selection-start-line="722" selection-start-column="8" selection-end-line="746" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18513">
-          <caret line="1141" column="0" lean-forward="false" selection-start-line="1141" selection-start-column="0" selection-end-line="1141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3362,8 +3488,148 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="673" column="65" lean-forward="false" selection-start-line="673" selection-start-column="65" selection-end-line="673" selection-end-column="65" />
+        <state relative-caret-position="141">
+          <caret line="650" column="47" lean-forward="false" selection-start-line="650" selection-start-column="47" selection-end-line="650" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="124" column="58" lean-forward="false" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+          <folding>
+            <element signature="e#4408#5226#0" expanded="true" />
+            <element signature="e#4528#5192#0" expanded="true" />
+            <element signature="e#5191#5192#0" expanded="true" />
+            <element signature="e#5225#5226#0" expanded="true" />
+            <element signature="e#5305#6274#0" expanded="true" />
+            <element signature="e#5702#6221#0" expanded="true" />
+            <element signature="e#6220#6221#0" expanded="true" />
+            <element signature="e#6273#6274#0" expanded="true" />
+            <element signature="e#6315#11889#0" expanded="true" />
+            <element signature="e#11194#11717#0" expanded="true" />
+            <element signature="e#11716#11717#0" expanded="true" />
+            <element signature="e#11888#11889#0" expanded="true" />
+            <element signature="e#11927#12893#0" expanded="true" />
+            <element signature="e#12323#12841#0" expanded="true" />
+            <element signature="e#12840#12841#0" expanded="true" />
+            <element signature="e#12892#12893#0" expanded="true" />
+            <element signature="e#12933#13903#0" expanded="true" />
+            <element signature="e#13331#13851#0" expanded="true" />
+            <element signature="e#13850#13851#0" expanded="true" />
+            <element signature="e#13902#13903#0" expanded="true" />
+            <element signature="e#13941#19490#0" expanded="true" />
+            <element signature="e#18807#19318#0" expanded="true" />
+            <element signature="e#19317#19318#0" expanded="true" />
+            <element signature="e#19489#19490#0" expanded="true" />
+            <element signature="e#19528#25084#0" expanded="true" />
+            <element signature="e#24394#24912#0" expanded="true" />
+            <element signature="e#24911#24912#0" expanded="true" />
+            <element signature="e#25083#25084#0" expanded="true" />
+            <element signature="e#25120#26261#0" expanded="true" />
+            <element signature="e#25514#26209#0" expanded="true" />
+            <element signature="e#26208#26209#0" expanded="true" />
+            <element signature="e#26260#26261#0" expanded="true" />
+            <element signature="e#26301#27461#0" expanded="true" />
+            <element signature="e#26699#27409#0" expanded="true" />
+            <element signature="e#27408#27409#0" expanded="true" />
+            <element signature="e#27460#27461#0" expanded="true" />
+            <element signature="e#27499#28644#0" expanded="true" />
+            <element signature="e#27895#28592#0" expanded="true" />
+            <element signature="e#28591#28592#0" expanded="true" />
+            <element signature="e#28643#28644#0" expanded="true" />
+            <element signature="e#28685#29843#0" expanded="true" />
+            <element signature="e#29084#29791#0" expanded="true" />
+            <element signature="e#29790#29791#0" expanded="true" />
+            <element signature="e#29842#29843#0" expanded="true" />
+            <element signature="e#29886#30855#0" expanded="true" />
+            <element signature="e#30287#30803#0" expanded="true" />
+            <element signature="e#30802#30803#0" expanded="true" />
+            <element signature="e#30854#30855#0" expanded="true" />
+            <element signature="e#30896#31868#0" expanded="true" />
+            <element signature="e#31295#31816#0" expanded="true" />
+            <element signature="e#31815#31816#0" expanded="true" />
+            <element signature="e#31867#31868#0" expanded="true" />
+            <element signature="e#31908#32883#0" expanded="true" />
+            <element signature="e#32306#32831#0" expanded="true" />
+            <element signature="e#32830#32831#0" expanded="true" />
+            <element signature="e#32882#32883#0" expanded="true" />
+            <element signature="e#32920#33727#0" expanded="true" />
+            <element signature="e#33344#33675#0" expanded="true" />
+            <element signature="e#33674#33675#0" expanded="true" />
+            <element signature="e#33726#33727#0" expanded="true" />
+            <element signature="e#33771#34743#0" expanded="true" />
+            <element signature="e#34173#34691#0" expanded="true" />
+            <element signature="e#34690#34691#0" expanded="true" />
+            <element signature="e#34742#34743#0" expanded="true" />
+            <element signature="e#34784#36179#0" expanded="true" />
+            <element signature="e#35183#36127#0" expanded="true" />
+            <element signature="e#35649#35677#0" expanded="true" />
+            <element signature="e#36000#36031#0" expanded="true" />
+            <element signature="e#36126#36127#0" expanded="true" />
+            <element signature="e#36178#36179#0" expanded="true" />
+            <element signature="e#36216#37609#0" expanded="true" />
+            <element signature="e#36813#37557#0" expanded="true" />
+            <element signature="e#37556#37557#0" expanded="true" />
+            <element signature="e#37608#37609#0" expanded="true" />
+            <element signature="e#37648#38796#0" expanded="true" />
+            <element signature="e#38045#38744#0" expanded="true" />
+            <element signature="e#38743#38744#0" expanded="true" />
+            <element signature="e#38795#38796#0" expanded="true" />
+            <element signature="e#39002#39030#0" expanded="true" />
+            <element signature="e#39060#39092#0" expanded="true" />
+            <element signature="e#39223#39661#0" expanded="true" />
+            <element signature="e#39291#39323#0" expanded="true" />
+            <element signature="e#39660#39661#0" expanded="true" />
+            <element signature="e#39716#39851#0" expanded="true" />
+            <element signature="e#39850#39851#0" expanded="true" />
+            <element signature="e#39889#40902#0" expanded="true" />
+            <element signature="e#40346#40850#0" expanded="true" />
+            <element signature="e#40849#40850#0" expanded="true" />
+            <element signature="e#40901#40902#0" expanded="true" />
+            <element signature="e#41709#42790#0" expanded="true" />
+            <element signature="e#42789#42790#0" expanded="true" />
+            <element signature="e#43472#43818#0" expanded="true" />
+            <element signature="e#43817#43818#0" expanded="true" />
+            <element signature="e#45267#45275#0" expanded="true" />
+            <element signature="e#46822#47112#0" expanded="true" />
+            <element signature="e#47111#47112#0" expanded="true" />
+            <element signature="e#47338#47366#0" expanded="true" />
+            <element signature="e#47449#51938#0" expanded="true" />
+            <element signature="e#51937#51938#0" expanded="true" />
+            <element signature="e#52211#52239#0" expanded="true" />
+            <element signature="e#52270#52295#0" expanded="true" />
+            <element signature="e#52372#52399#0" expanded="true" />
+            <element signature="e#52418#52974#0" expanded="true" />
+            <element signature="e#52973#52974#0" expanded="true" />
+            <element signature="e#53012#53039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/main_splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="e#2053#2973#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3128#3160#0" expanded="true" />
+            <element signature="e#3312#3340#0" expanded="true" />
+            <element signature="e#3374#3406#0" expanded="true" />
+            <element signature="e#3561#4204#0" expanded="true" />
+            <element signature="e#3698#4170#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
+            <element signature="e#4203#4204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="233" column="108" lean-forward="false" selection-start-line="233" selection-start-column="108" selection-end-line="233" selection-end-column="108" />
           <folding />
         </state>
       </provider>
