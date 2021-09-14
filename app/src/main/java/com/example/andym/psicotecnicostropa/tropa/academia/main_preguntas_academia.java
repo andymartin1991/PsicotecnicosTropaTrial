@@ -99,7 +99,7 @@ public class main_preguntas_academia extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
-        LinearLayout padre = (LinearLayout) findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout) findViewById(R.id.lytMain);
         RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
@@ -109,7 +109,7 @@ public class main_preguntas_academia extends Activity {
             subcontenedor.setBackgroundResource(R.color.rojonavidad);
         } else {
 
-        }
+        }*/
 
         //////////////////////////////////////
         final InterstitialAd interstitial = new InterstitialAd(this);

@@ -46,6 +46,8 @@
         <activity android:name=".tropa.academia.main_preguntasAleatorio_academia"></activity>
         <activity android:name=".tropa.academia.main_examen_academia"></activity>
         <activity android:name=".tropa.academia.main_resultado_exam_academia"></activity>
+        <activity android:name=".tropa.main_tropaymarineria"></activity>
+        <activity android:name=".tropa.main_tropaymarineriaexamen"></activity>
     </application>
 
 </manifest>

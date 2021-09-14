@@ -68,7 +68,7 @@ public class main_principal extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_principal);
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -76,7 +76,7 @@ public class main_principal extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         // Crear adView.
         AdView adView = new AdView(this);
@@ -114,7 +114,7 @@ public class main_principal extends Activity {
         patatas = (Button) findViewById(R.id.papa);
         academia = (Button) findViewById(R.id.button6);
 
-        Button exiopo = (Button)findViewById(R.id.exitoopo);
+        /*Button exiopo = (Button)findViewById(R.id.exitoopo);
         exiopo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -124,16 +124,13 @@ public class main_principal extends Activity {
                             Thread.sleep(500);
                         } catch (InterruptedException e) {
                         }
-                        Intent intent = new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://www.exitooposiciones.es/tropa_tienda.html"));
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                                | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                        startActivity(intent);
-                        //entra[0] = true;
+
+                        startActivity(new Intent(main_principal.this, main_tropaymarineria.class));
+                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
                     }
                 }).start();
             }
-        });
+        });*/
 
         final boolean[] entra = {true};
         estudio.setOnClickListener(new View.OnClickListener() {
@@ -431,6 +428,8 @@ public class main_principal extends Activity {
                                 } catch (InterruptedException e) {
                                 }
 
+                                /*startActivity(new Intent(main_principal.this, main_tropaymarineriaexamen.class));
+                                overridePendingTransition(R.anim.transpain, R.anim.transpaout);*/
                                 startActivity(new Intent(main_principal.this, main_examen.class));
                                 overridePendingTransition(R.anim.transpain, R.anim.transpaout);
 

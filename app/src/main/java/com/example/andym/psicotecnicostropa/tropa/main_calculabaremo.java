@@ -44,7 +44,7 @@ public class main_calculabaremo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_calculabaremo);
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -52,7 +52,7 @@ public class main_calculabaremo extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         //////////////////////////////////////
         final InterstitialAd interstitial = new InterstitialAd(this);

@@ -34,7 +34,7 @@ public class main_info extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_info);
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
         int mes = cc1.get(Calendar.MONTH)+1;
@@ -42,7 +42,7 @@ public class main_info extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         //////////////////////////////////////
         final InterstitialAd interstitial = new InterstitialAd(this);

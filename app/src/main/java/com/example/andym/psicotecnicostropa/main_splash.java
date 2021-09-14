@@ -44,7 +44,7 @@ public class main_splash extends Activity {
         ImageView imagen = (ImageView)findViewById(R.id.imageView1);
         Calendar c1 = new GregorianCalendar();
 
-        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        /*int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
 
 
@@ -52,9 +52,9 @@ public class main_splash extends Activity {
             imagen.setImageResource(R.drawable.splashtrialnavideno);
             padre.setBackgroundResource(R.color.rojonavidad);
             mensaje.setText("Psicotécnicos Tropa\nte desea unas felices fiestas");
-        }else{
+        }else{*/
             imagen.setImageResource(R.drawable.splash);
-        }
+        /*}*/
 
         mostrar();
         try {

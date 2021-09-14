@@ -37,7 +37,7 @@ public class main_contacto extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_contacto);
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -45,7 +45,7 @@ public class main_contacto extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         final String[] items = {getString(R.string.asunto1), getString(R.string.asunto2), getString(R.string.asunto3), getString(R.string.asunto4), getString(R.string.asunto5)};
 
