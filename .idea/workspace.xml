@@ -12,22 +12,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e9bcf3d-0be5-4a37-8cfa-7ae7b2874a8e" name="Default" comment="subida de preactualizacion">
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterDir="false" />
+    <list default="true" id="3e9bcf3d-0be5-4a37-8cfa-7ae7b2874a8e" name="Default" comment="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/espp007.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/espp007.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/espp015ra.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/espp015ra.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" afterDir="false" />
@@ -66,7 +53,7 @@
     </system>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="E:\Andres\AndroidStudioProjects\keyapp\keyapp" />
+    <option name="KEY_STORE_PATH" value="C:\Users\Juegos\StudioProjects\keyapp\keyapp" />
     <option name="KEY_ALIAS" value="andymartin1991" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
@@ -81,11 +68,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ApkExportedModule" value="app" />
+    <property name="ApkExportedModule" value="PsicotecnicosTropaTrial.app" />
     <property name="BundleExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_XL_API_29" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-15T16:37:57.823Z" />
-    <property name="ExportApk.ApkPath" value="E:\Andres\AndroidStudioProjects\PsicotecnicosTropaTrial\app\release" />
+    <property name="ExportApk.ApkPath" value="C:\Users\Juegos\Desktop" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.Flavors" value="" />
@@ -98,7 +85,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="device.picker.selection" value="Pixel_2_XL_API_26" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PsicotecnicosTropa" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -233,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631639766462</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release">
+      <created>1631640176546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631640176546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +244,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="subida de preactualizacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="subida de preactualizacion" />
+    <MESSAGE value="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
