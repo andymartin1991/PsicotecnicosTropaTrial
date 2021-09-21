@@ -12,27 +12,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e9bcf3d-0be5-4a37-8cfa-7ae7b2874a8e" name="Default" comment="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release">
+    <list default="true" id="3e9bcf3d-0be5-4a37-8cfa-7ae7b2874a8e" name="Default" comment="se actualiza la puntuacion de baremo">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/espp007.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/espp007.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/espp015ra.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/espp015ra.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/exiopo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/fisica.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/fisica.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecap002.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecap002.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecap009.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecap009.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp002.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp002.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp004ra.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp004ra.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp004rb.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp004rb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp004rc.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp004rc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp009.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp009.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp014.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp014.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mecp019.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mecp019.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/memp001.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/memp001.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/memp006.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/memp006.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/memp012.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/memp012.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/perp007.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/perp007.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/votar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/votar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_calculabaremo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/andym/psicotecnicostropa/tropa/main_calculabaremo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +44,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1bx4sU9NL89TlAJ4ufXPocPcp31" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -227,7 +214,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631640176546</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="arreglo para la compilacion en produccion">
+      <created>1631640558094</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631640558094</updated>
+    </task>
+    <task id="LOCAL-00004" summary="arreglo para la compilacion en produccion">
+      <created>1632240313868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632240313868</updated>
+    </task>
+    <task id="LOCAL-00005" summary="se actualiza la puntuacion de baremo">
+      <created>1632240592061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632240592061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +253,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="subida de preactualizacion" />
     <MESSAGE value="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizacion de SDK min y compilacion, eliminada akp de la carpeta release" />
+    <MESSAGE value="arreglo para la compilacion en produccion" />
+    <MESSAGE value="se actualiza la puntuacion de baremo" />
+    <option name="LAST_COMMIT_MESSAGE" value="se actualiza la puntuacion de baremo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
