@@ -163,6 +163,7 @@ public class main_calculabaremo extends Activity {
                 } else if (checkedId == R.id.j1) {
                     meriAInt = 0;
                 }
+                //prueba
             }
         });
 
