@@ -103,7 +103,7 @@
                                 android:layout_marginLeft="24dp"
                                 android:layout_marginStart="24dp"
                                 android:layout_weight="1"
-                                android:text="@string/meritoaca" />
+                                android:text="Méritos Académicos" />
 
                             <RadioGroup
                                 android:id="@+id/meriA"
@@ -308,6 +308,18 @@
 
                             </RadioGroup>
 
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="24dp"
+                                android:layout_marginStart="24dp"
+                                android:layout_weight="1"
+                                android:text="Deportista" />
+
                             <RadioGroup
                                 android:id="@+id/meriG25"
                                 android:layout_width="match_parent"
@@ -348,7 +360,7 @@
                                 android:layout_alignParentTop="true"
                                 android:layout_marginLeft="24dp"
                                 android:layout_marginStart="24dp"
-                                android:text="Ingles" />
+                                android:text="Inglés" />
 
                             <RadioGroup
                                 android:id="@+id/meriG2"
